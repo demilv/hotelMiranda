@@ -1,0 +1,17 @@
+$font1: 'Old Standard TT', serif;
+$font2: 'Archivo', sans-serif;
+$font3: 'Roboto', sans-serif;
+$color1: #FFFFFF;
+$color2: #111111;
+$color3: #777777;
+$bgcolor0: transparent;
+$bgcolor1: #BEAD8E;
+
+
+
+@mixin font-family($font, $color, $bgcolor) {
+    font-family: $font;
+    color: $color;
+    background-color: $bgcolor;
+  }
+  

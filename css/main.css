@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +7,62 @@
 
 body {
   min-width: 320px;
+}
+
+.backImg {
+  background-image: url(../../assets/Rectángulo21.png);
+}
+
+.hotel {
+  padding: 1.5em;
+}
+.hotel__container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 2.5em;
+}
+.hotel__container__title {
+  font-family: "Archivo", sans-serif;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  font-size: 2em;
+  width: 2.5em;
+  height: 2.3em;
+  margin-right: 1em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.4em;
+  grid-column: 1/span 1;
+  grid-row: 1/span 2;
+}
+.hotel__container__h2Primero {
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  font-weight: 700;
+  grid-column: 2, span 1;
+  grid-row: 1;
+}
+.hotel__container__h2Segundo {
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  grid-column: 2, span 1;
+  grid-row: 2;
+  font-weight: 400;
+}
+.hotel__text {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=main.css.map */
