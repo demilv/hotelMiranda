@@ -1,7 +1,6 @@
-@mixin button() {
-    
-  
+@mixin buttonImg() {  
     &:hover {
-      
+      background-color: #BEAD8E;
+      transform:scale(1.15)
     }
   }

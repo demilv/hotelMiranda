@@ -1,4 +1,6 @@
 @import '../components/text.scss';
+@import '../components/button.scss';
+@import '../components/gridContainers.scss';
 
 .backImg{
     background-image: url(../../assets/Rectángulo21.png)
@@ -8,13 +10,11 @@
 .hotel{
     padding: 1.5em;
     &__container{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr 1fr;
-        margin-bottom: 2.5em;
+        @include gridContainer();
         &__title{
-            @include font-family($font2, $color1, $bgcolor1);
-            font-size:2em;
+            @include font-family($font2, $color1, $bgcolor1, $weight700, $size2);
+            font-size: 2.2em;
+            margin-top: 0.2em;          
             width: 2.5em;
             height: 2.3em;
             margin-right: 1em;
@@ -25,26 +25,99 @@
             grid-row: 1 / span 2;
         }
         &__h2Primero{
-            @include font-family($font2, $color2, $bgcolor0);
-            margin-top: 0.3em;
-            margin-bottom: 0.1em;
-            font-weight: 700;
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size2);
+            margin: 0.3em 0 0.1em 0.3em;
             grid-column: 2, span 1;
             grid-row: 1;
         }
         &__h2Segundo{
-            @include font-family($font2, $color2, $bgcolor0);
+            @include font-family($font2, $color2, $bgcolor0, $weight400, $size2);
+            margin: 0 0 0 0.3em;
             grid-column: 2, span 1;
             grid-row: 2;
-            font-weight:400;
         }        
     }
     &__text{
-        @include font-family($font2, $color3, $bgcolor0);
+        @include font-family($font2, $color3, $bgcolor0, $weight400, $size1);
+        line-height: 1.7em;
     }
 }
 
 .links{
     display: flex;
     flex-direction: row;
+    margin-bottom:1.5em;
+    &__button{
+        margin-left: 2.4em;
+        border: none;
+        img {
+            width:70%;
+            height: auto;
+            margin-top: 0.2em;
+        }
+    }
+    &__button:hover{
+        @include buttonImg();
+    }
+}
+
+.services{
+    margin: 0 0 1.5em 1.5em;     
+    &__title{
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        font-weight: 400;
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size15)
+    }  
+    &__list {
+        display:flex;
+        flex-direction: row;
+        @include font-family($font3, $color3, $bgcolor0, $weight400, $size1);
+        &__1{
+            margin-right: 3em;
+        }
+        &__1, &__2{
+            line-height: 2.5em;
+            list-style: none;
+        }
+    }
+}
+
+.contact{
+    margin-left: 1.5em;
+    &__title{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size15);
+        margin-bottom: 1.3em
+    }
+    &__container{
+        @include gridContainer();
+        grid-template-columns: 20% 80%;
+        &__img{
+            margin-top: 0.3em;
+            grid-column: 1 / span 1; 
+            grid-row: 1 / span 2;
+        }
+        &__text1{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size125);
+            margin-top: 0.3em;
+            margin-bottom: 0.1em;
+            grid-column: 2, span 1;
+            grid-row: 1;
+        }
+        &__text2{
+            @include font-family($font3, $color2, $bgcolor0, $weight400, $size1);
+            font-size: 0.85em;
+            grid-column: 2, span 1;
+            grid-row: 2;
+        }
+    }
+}
+
+.bottomP1{
+    margin-bottom: 1em;
+}
+
+.bottomP1, .bottomP2 {
+    @include font-family($font3, $color2, $bgcolor0, $weight700, $size1);
+    margin-left: 1em
 }

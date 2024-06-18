@@ -26,7 +26,10 @@ body {
   font-family: "Archivo", sans-serif;
   color: #FFFFFF;
   background-color: #BEAD8E;
+  weight: 700;
   font-size: 2em;
+  font-size: 2.2em;
+  margin-top: 0.2em;
   width: 2.5em;
   height: 2.3em;
   margin-right: 1em;
@@ -40,9 +43,9 @@ body {
   font-family: "Archivo", sans-serif;
   color: #111111;
   background-color: transparent;
-  margin-top: 0.3em;
-  margin-bottom: 0.1em;
-  font-weight: 700;
+  weight: 700;
+  font-size: 2em;
+  margin: 0.3em 0 0.1em 0.3em;
   grid-column: 2, span 1;
   grid-row: 1;
 }
@@ -50,19 +53,126 @@ body {
   font-family: "Archivo", sans-serif;
   color: #111111;
   background-color: transparent;
+  weight: 400;
+  font-size: 2em;
+  margin: 0 0 0 0.3em;
   grid-column: 2, span 1;
   grid-row: 2;
-  font-weight: 400;
 }
 .hotel__text {
   font-family: "Archivo", sans-serif;
   color: #777777;
   background-color: transparent;
+  weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
 }
 
 .links {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1.5em;
+}
+.links__button {
+  margin-left: 2.4em;
+  border: none;
+}
+.links__button img {
+  width: 70%;
+  height: auto;
+  margin-top: 0.2em;
+}
+.links__button:hover:hover {
+  background-color: #BEAD8E;
+  transform: scale(1.15);
+}
+
+.services {
+  margin: 0 0 1.5em 1.5em;
+}
+.services__title {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  weight: 400;
+  font-size: 1.5em;
+}
+.services__list {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  weight: 400;
+  font-size: 1em;
+}
+.services__list__1 {
+  margin-right: 3em;
+}
+.services__list__1, .services__list__2 {
+  line-height: 2.5em;
+  list-style: none;
+}
+
+.contact {
+  margin-left: 1.5em;
+}
+.contact__title {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 1.3em;
+}
+.contact__container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 2.5em;
+  grid-template-columns: 20% 80%;
+}
+.contact__container__img {
+  margin-top: 0.3em;
+  grid-column: 1/span 1;
+  grid-row: 1/span 2;
+}
+.contact__container__text1 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  weight: 400;
+  font-size: 1.25em;
+  margin-top: 0.3em;
+  margin-bottom: 0.1em;
+  grid-column: 2, span 1;
+  grid-row: 1;
+}
+.contact__container__text2 {
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  weight: 400;
+  font-size: 1em;
+  font-size: 0.85em;
+  grid-column: 2, span 1;
+  grid-row: 2;
+}
+
+.bottomP1 {
+  margin-bottom: 1em;
+}
+
+.bottomP1, .bottomP2 {
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  weight: 700;
+  font-size: 1em;
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

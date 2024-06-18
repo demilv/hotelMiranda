@@ -6,12 +6,20 @@ $color2: #111111;
 $color3: #777777;
 $bgcolor0: transparent;
 $bgcolor1: #BEAD8E;
+$weight400: 400;
+$weight700: 700;
+$size1: 1em;
+$size125: 1.25em;
+$size15: 1.5em;
+$size2: 2em;
 
 
 
-@mixin font-family($font, $color, $bgcolor) {
+@mixin font-family($font, $color, $bgcolor, $weight, $size) {
     font-family: $font;
     color: $color;
     background-color: $bgcolor;
+    weight: $weight;
+    font-size: $size
   }
   
