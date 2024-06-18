@@ -1,6 +1,12 @@
+@import './text.scss';
+
 @mixin buttonImg() {  
     &:hover {
       background-color: #BEAD8E;
       transform:scale(1.15)
     }
   }
+@mixin buttonNaranja(){
+  @include font-family($font3, $color1, $bgcolor1, $weight700, $size1);
+  border: none;
+}
