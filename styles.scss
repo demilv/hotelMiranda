@@ -8,4 +8,5 @@ body {
    min-width: 320px;
 }
 
-@import './css/pages/footer.scss'
+@import './css/components/footer.scss';
+@import './css/components/navbar.scss'
