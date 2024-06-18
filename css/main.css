@@ -175,4 +175,38 @@ body {
   margin-left: 1em;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
+  height: 4.25em;
+}
+.navbar__menu {
+  border: none;
+  background-color: transparent;
+  width: 2.25em;
+  font-size: 1.75em;
+  padding-right: 0.5em;
+  margin-left: 1em;
+}
+.navbar__recuadro {
+  width: 1em;
+  height: 1em;
+  margin: 1em 2em 0 1em;
+  box-shadow: 0px 14px 24px 10px rgba(56, 54, 54, 0.2509803922);
+  margin-top: 1em;
+}
+.navbar__imgtxt {
+  width: 4em;
+  margin-right: 4em;
+}
+.navbar__icon1 {
+  margin-right: 1.8em;
+}
+.navbar__icon1, .navbar__icon2 {
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 1.25em;
+}
+
 /*# sourceMappingURL=main.css.map */
