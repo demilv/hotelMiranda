@@ -328,6 +328,7 @@ body {
 .contactForm {
   text-align: left;
   position: relative;
+  margin-bottom: 4em;
 }
 .contactForm__input {
   height: 4.15em;
