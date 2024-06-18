@@ -1,0 +1,34 @@
+@import './text.scss';
+
+@mixin tituloSuperior(){
+    @include font-family($font2, $color1, $bgcolor0, $weight700, $size085);
+    padding: 5em 0 2em 1em;
+    line-height: 1.15em;
+    letter-spacing: 0.2em;
+}
+
+@mixin tituloIntermedio(){
+    @include font-family($font1, $color1, $bgcolor0, $weight200, $size35);
+    padding-left: 0.25em;
+    letter-spacing: -0.075em;
+}
+
+@mixin containerTituloInferior(){
+    margin-top: 3em;
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    width:11em;
+    height:10em;
+    margin-left: 10.5em;
+}
+
+@mixin tituloInferior(){
+    @include font-family($font2, $color2, $bgcolor0, $weight700, $size1);
+    padding: 1em 0 0 2.3em;    
+}
+
+@mixin tituloInferior2(){
+    @include font-family($font2, $color4, $bgcolor0, $weight700, $size1);
+    padding:1em 0 0 0.5em
+}

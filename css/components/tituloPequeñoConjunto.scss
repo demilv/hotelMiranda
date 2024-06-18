@@ -1,0 +1,22 @@
+@import './text.scss';
+@import './tituloTexto.scss';
+
+.titlePeque{
+    height: 17.25em;
+    background-color: #333333;    
+    &__superior{
+        @include tituloSuperior();
+    }
+    &__intermedio{
+        @include tituloIntermedio(); 
+    }
+    &__container{
+        @include containerTituloInferior();
+        &__inferior{
+            @include tituloInferior()            
+        }
+        &__inferior2{
+            @include tituloInferior2()
+        }
+    }
+}

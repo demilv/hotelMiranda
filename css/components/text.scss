@@ -4,14 +4,18 @@ $font3: 'Roboto', sans-serif;
 $color1: #FFFFFF;
 $color2: #111111;
 $color3: #777777;
+$color4: #BEAD8E;
 $bgcolor0: transparent;
 $bgcolor1: #BEAD8E;
+$weight200: 200;
 $weight400: 400;
 $weight700: 700;
+$size085: 0.85em;
 $size1: 1em;
 $size125: 1.25em;
 $size15: 1.5em;
 $size2: 2em;
+$size35: 3.5em;
 
 
 
@@ -19,7 +23,7 @@ $size2: 2em;
     font-family: $font;
     color: $color;
     background-color: $bgcolor;
-    weight: $weight;
+    font-weight: $weight;
     font-size: $size
   }
   

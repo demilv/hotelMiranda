@@ -26,7 +26,7 @@ body {
   font-family: "Archivo", sans-serif;
   color: #FFFFFF;
   background-color: #BEAD8E;
-  weight: 700;
+  font-weight: 700;
   font-size: 2em;
   font-size: 2.2em;
   margin-top: 0.2em;
@@ -43,7 +43,7 @@ body {
   font-family: "Archivo", sans-serif;
   color: #111111;
   background-color: transparent;
-  weight: 700;
+  font-weight: 700;
   font-size: 2em;
   margin: 0.3em 0 0.1em 0.3em;
   grid-column: 2, span 1;
@@ -53,7 +53,7 @@ body {
   font-family: "Archivo", sans-serif;
   color: #111111;
   background-color: transparent;
-  weight: 400;
+  font-weight: 400;
   font-size: 2em;
   margin: 0 0 0 0.3em;
   grid-column: 2, span 1;
@@ -63,7 +63,7 @@ body {
   font-family: "Archivo", sans-serif;
   color: #777777;
   background-color: transparent;
-  weight: 400;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.7em;
 }
@@ -97,7 +97,7 @@ body {
   font-family: "Old Standard TT", serif;
   color: #111111;
   background-color: transparent;
-  weight: 400;
+  font-weight: 400;
   font-size: 1.5em;
 }
 .services__list {
@@ -106,7 +106,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #777777;
   background-color: transparent;
-  weight: 400;
+  font-weight: 400;
   font-size: 1em;
 }
 .services__list__1 {
@@ -124,7 +124,7 @@ body {
   font-family: "Old Standard TT", serif;
   color: #111111;
   background-color: transparent;
-  weight: 400;
+  font-weight: 400;
   font-size: 1.5em;
   margin-bottom: 1.3em;
 }
@@ -144,7 +144,7 @@ body {
   font-family: "Old Standard TT", serif;
   color: #111111;
   background-color: transparent;
-  weight: 400;
+  font-weight: 400;
   font-size: 1.25em;
   margin-top: 0.3em;
   margin-bottom: 0.1em;
@@ -155,8 +155,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #111111;
   background-color: transparent;
-  weight: 400;
-  font-size: 1em;
+  font-weight: 400;
   font-size: 0.85em;
   grid-column: 2, span 1;
   grid-row: 2;
@@ -170,7 +169,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #111111;
   background-color: transparent;
-  weight: 700;
+  font-weight: 700;
   font-size: 1em;
   margin-left: 1em;
 }
@@ -207,6 +206,55 @@ body {
   width: 1.5em;
   height: 1.5em;
   margin-top: 1.25em;
+}
+
+.titlePeque {
+  height: 17.25em;
+  background-color: #333333;
+}
+.titlePeque__superior {
+  font-family: "Archivo", sans-serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  padding: 5em 0 2em 1em;
+  line-height: 1.15em;
+  letter-spacing: 0.2em;
+}
+.titlePeque__intermedio {
+  font-family: "Old Standard TT", serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 200;
+  font-size: 3.5em;
+  padding-left: 0.25em;
+  letter-spacing: -0.075em;
+}
+.titlePeque__container {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 11em;
+  height: 10em;
+  margin-left: 10.5em;
+}
+.titlePeque__container__inferior {
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 1em 0 0 2.3em;
+}
+.titlePeque__container__inferior2 {
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 1em 0 0 0.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

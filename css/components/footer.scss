@@ -105,8 +105,7 @@
             grid-row: 1;
         }
         &__text2{
-            @include font-family($font3, $color2, $bgcolor0, $weight400, $size1);
-            font-size: 0.85em;
+            @include font-family($font3, $color2, $bgcolor0, $weight400, $size085);
             grid-column: 2, span 1;
             grid-row: 2;
         }
