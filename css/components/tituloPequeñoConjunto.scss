@@ -10,7 +10,13 @@
     &__intermedio{
         @include tituloIntermedio(); 
     }
-    &__inferior{
-        
+    &__container{
+        @include containerTituloInferior();
+        &__inferior{
+            @include tituloInferior()            
+        }
+        &__inferior2{
+            @include tituloInferior2()
+        }
     }
 }

@@ -231,5 +231,30 @@ body {
   padding-left: 0.25em;
   letter-spacing: -0.075em;
 }
+.titlePeque__container {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 11em;
+  height: 10em;
+  margin-left: 10.5em;
+}
+.titlePeque__container__inferior {
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 1em 0 0 2.3em;
+}
+.titlePeque__container__inferior2 {
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 1em 0 0 0.5em;
+}
 
 /*# sourceMappingURL=main.css.map */
