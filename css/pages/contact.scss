@@ -1,0 +1,44 @@
+@import '../components/contactoRecuadros.scss';
+@import '../components/contactoNumerosMasivos.scss';
+@import '../components/text.scss';
+
+.contact__medios__containers{
+    position:relative;
+    @include contactoContainer();
+    height:14.6em;
+    &__img{
+        grid-column: 1 / span 1; 
+        grid-row: 1 / span 1;
+    }
+    &__title{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size125);
+        padding-left: 1em;
+        grid-column: 2 / span 1; 
+        grid-row: 1 / span 1;
+        z-index:5;
+    }
+    &__txt, &__txt2{
+        @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+        padding-left: 1em;
+        grid-column: 2 / span 1; 
+        grid-row: 2 / span 1;
+        z-index:5;
+    }
+    &__txt2{
+        padding-top: 1.5em;
+    }
+    &__bigNumber{
+        @include font-family($font3, $color5, $bgcolor0, $weight700, $size1); //Size se ve sobreescrito por numeroMasivo1()
+        @include numeroMasivo1()
+    }
+}
+
+.contact__medios__number{
+    @include contactoContainer()
+
+}
+
+.contact__medios__location{
+    @include contactoContainer()
+
+}   

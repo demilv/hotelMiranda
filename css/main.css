@@ -257,4 +257,67 @@ body {
   padding: 1em 0 0 0.5em;
 }
 
+.contact__medios__containers {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 4fr;
+  margin-top: 2.5em;
+  height: 14.6em;
+}
+.contact__medios__containers__img {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+.contact__medios__containers__title {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.25em;
+  padding-left: 1em;
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+  z-index: 5;
+}
+.contact__medios__containers__txt, .contact__medios__containers__txt2 {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  padding-left: 1em;
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  z-index: 5;
+}
+.contact__medios__containers__txt2 {
+  padding-top: 1.5em;
+}
+.contact__medios__containers__bigNumber {
+  font-family: "Roboto", sans-serif;
+  color: #F8F8F8;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  position: absolute;
+  right: 0;
+  font-size: 13.1em;
+  top: -0.2em;
+}
+
+.contact__medios__number {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 4fr;
+  margin-top: 2.5em;
+}
+
+.contact__medios__location {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 4fr;
+  margin-top: 2.5em;
+}
+
 /*# sourceMappingURL=main.css.map */
