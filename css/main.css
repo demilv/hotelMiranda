@@ -257,4 +257,130 @@ body {
   padding: 1em 0 0 0.5em;
 }
 
+.contact__medios__containers {
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 4fr;
+  margin-top: 2.5em;
+  height: 14.6em;
+}
+.contact__medios__containers__img {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+.contact__medios__containers__title {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.25em;
+  padding-left: 1em;
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+  z-index: 5;
+}
+.contact__medios__containers__txt, .contact__medios__containers__txt2 {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  padding-left: 1em;
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  z-index: 5;
+}
+.contact__medios__containers__txt2 {
+  padding-top: 1.5em;
+}
+.contact__medios__containers__bigNumber {
+  font-family: "Roboto", sans-serif;
+  color: #F8F8F8;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  position: absolute;
+  right: 0;
+  font-size: 13.1em;
+  top: -0.2em;
+}
+
+.contact__medios__number {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 4fr;
+  margin-top: 2.5em;
+}
+
+.contact__medios__location {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 1fr 4fr;
+  margin-top: 2.5em;
+}
+
+.imgContact {
+  max-width: 20.5em;
+  margin-bottom: 2em;
+}
+
+.contactForm {
+  text-align: left;
+  position: relative;
+  margin-bottom: 4em;
+}
+.contactForm__input {
+  height: 4.15em;
+  margin-bottom: 1em;
+}
+.contactForm__input, .contactForm__textarea {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: #F8F8F8;
+  font-weight: 400;
+  font-size: 1em;
+  width: 20.5em;
+  padding-left: 3em;
+  border: none;
+  display: block;
+}
+.contactForm__textarea {
+  height: 11em;
+  margin-bottom: 2em;
+  padding-top: 1.5em;
+  resize: none;
+}
+.contactForm__submit {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  font-weight: 700;
+  font-size: 1em;
+  border: none;
+  width: 16.15em;
+  height: 3.75em;
+  margin-left: 2.15em;
+}
+.contactForm__img1, .contactForm__img2, .contactForm__img3, .contactForm__img4, .contactForm__img5 {
+  position: absolute;
+  left: 1em;
+  z-index: 10;
+}
+.contactForm__img1 {
+  top: 1.5em;
+}
+.contactForm__img2 {
+  top: 6.7em;
+}
+.contactForm__img3 {
+  top: 11.9em;
+}
+.contactForm__img4 {
+  top: 17.1em;
+}
+.contactForm__img5 {
+  top: 22.3em;
+}
+
 /*# sourceMappingURL=main.css.map */

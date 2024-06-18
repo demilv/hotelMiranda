@@ -1,0 +1,6 @@
+@mixin contactoContainer(){
+    display: grid;
+    grid-template-columns: 15% 85%; 
+    grid-template-rows: 1fr 4fr;
+    margin-top: 2.5em;
+}

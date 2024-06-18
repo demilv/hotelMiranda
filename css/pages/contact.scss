@@ -1,0 +1,99 @@
+@import '../components/contactoRecuadros.scss';
+@import '../components/contactoNumerosMasivos.scss';
+@import '../components/text.scss';
+@import '../components/button.scss';
+
+.contact__medios__containers{
+    position:relative;
+    @include contactoContainer();
+    height:14.6em;
+    &__img{
+        grid-column: 1 / span 1; 
+        grid-row: 1 / span 1;
+    }
+    &__title{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size125);
+        padding-left: 1em;
+        grid-column: 2 / span 1; 
+        grid-row: 1 / span 1;
+        z-index:5;
+    }
+    &__txt, &__txt2{
+        @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+        padding-left: 1em;
+        grid-column: 2 / span 1; 
+        grid-row: 2 / span 1;
+        z-index:5;
+    }
+    &__txt2{
+        padding-top: 1.5em;
+    }
+    &__bigNumber{
+        @include font-family($font3, $color5, $bgcolor0, $weight700, $size1); //Size se ve sobreescrito por numeroMasivo1()
+        @include numeroMasivo1()
+    }
+}
+
+.contact__medios__number{
+    @include contactoContainer()
+
+}
+
+.contact__medios__location{
+    @include contactoContainer()
+
+}   
+
+.imgContact{
+    max-width: 20.5em;
+    margin-bottom: 2em;
+}
+
+.contactForm{
+    text-align: left;
+    position:relative;
+    margin-bottom: 4em;
+    &__input{
+        height: 4.15em;
+        margin-bottom: 1em;              
+    }
+    &__input, &__textarea{
+        @include font-family($font3, $color3, $bgcolor2, $weight400, $size1);
+        width:20.5em;
+        padding-left: 3em;
+        border: none;
+        display:block;  
+    }
+    &__textarea{
+        height:11em;
+        margin-bottom:2em;
+        padding-top: 1.5em;
+        resize: none;
+    }
+    &__submit{
+        @include buttonNaranja();
+        width:16.15em;
+        height:3.75em;
+        margin-left: 2.15em;
+    }
+    &__img1, &__img2, &__img3, &__img4, &__img5{
+        position:absolute;
+        left: 1em;
+        z-index: 10;
+    }
+    &__img1{
+        top: 1.5em;
+    }
+    &__img2{
+        top: 6.7em;
+    }
+    &__img3{
+        top: 11.9em;
+    }
+    &__img4{
+        top: 17.1em;
+    }
+    &__img5{
+        top: 22.3em;
+    }
+}
