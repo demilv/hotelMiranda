@@ -408,7 +408,8 @@ body {
 }
 
 .titleGrande {
-  height: 46.25em;
+  height: 44.25em;
+  margin-bottom: 10em;
 }
 .titleGrande__button {
   font-family: "Roboto", sans-serif;
@@ -435,7 +436,7 @@ body {
 }
 .titleGrande__availability {
   margin-top: 5em;
-  height: 22.25em;
+  height: 20.25em;
   background-color: #222222;
 }
 .titleGrande__availability__txt {
@@ -470,6 +471,48 @@ body {
   background-color: transparent;
   font-weight: 400;
   font-size: 0.85em;
+}
+
+.aboutUs {
+  margin-left: 1em;
+}
+.aboutUs__h4 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-bottom: 2em;
+}
+.aboutUs__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 3.5em;
+  letter-spacing: -0.08em;
+  margin-bottom: 0.3em;
+}
+.aboutUs__p {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+.aboutUs__button {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  font-weight: 700;
+  font-size: 1em;
+  height: 3.75em;
+  border: none;
+  width: 16.15em;
+  line-height: 0.9em;
+  letter-spacing: 0.15em;
 }
 
 /*# sourceMappingURL=main.css.map */

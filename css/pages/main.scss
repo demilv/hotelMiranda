@@ -1,8 +1,10 @@
 @import '../components/text.scss';
 @import '../components/button.scss';
+@import '../components/explanation.scss';
 
 .titleGrande{
-    height:46.25em;
+    height:44.25em;
+    margin-bottom: 10em;
     &__button{
         @include buttonNaranja();
         width:16.15em;        
@@ -23,7 +25,7 @@
     }
     &__availability{
         margin-top: 5em;
-        height:22.25em;
+        height:20.25em;
         background-color: #222222;     
         &__txt{
             @include font-family($font3, $color1, $bgcolor0, $weight700, $size1);
@@ -51,6 +53,27 @@
             @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
 
         }   
+    }
+}
+.aboutUs{
+    margin-left: 1em;
+    &__h4{
+        @include explanationH4();
+        margin-bottom: 2em;
+    }
+    &__h2{
+        @include explanationH2();
+        margin-bottom: 0.3em;
+    }
+    &__p{
+        @include explanationP();
+        margin-bottom: 3em;
+    }
+    &__button{
+        @include buttonNaranja();
+        width:16.15em;               
+        line-height: 0.9em;
+        letter-spacing: 0.15em; 
     }
 }
 
