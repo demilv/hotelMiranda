@@ -1,0 +1,56 @@
+@import '../components/text.scss';
+@import '../components/button.scss';
+
+.titleGrande{
+    height:46.25em;
+    &__button{
+        @include buttonNaranja();
+        width:16.15em;        
+        margin-left: 1em;
+        margin-top: 1.5em;
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.85em;
+        line-height: 0.9em;
+        letter-spacing: 0.15em;
+
+    }
+    &__button--negro{
+        border: 2px solid #FFFFFF54;
+        background-color: transparent;
+    }
+    &__button--grande{
+        width: 18.30em;
+    }
+    &__availability{
+        margin-top: 5em;
+        height:22.25em;
+        background-color: #222222;     
+        &__txt{
+            @include font-family($font3, $color1, $bgcolor0, $weight700, $size1);
+            margin-left: 1em;
+            line-height: 1.2em;
+            padding-top: 2em;
+            margin-bottom: 1.5em;
+        }
+        &__container{
+            margin-left: 1em;
+            border: none; 
+            border-bottom: 2px solid #BEAD8E; 
+            padding-bottom: 0.8em;
+            width: 25.5em;
+            &__imgButton{
+                background-color: transparent;
+                border: none;
+            }
+        }
+        &__dates{
+            margin-left: 1em;
+            width:23.4em;
+            background-color: transparent;
+            border: none;
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+
+        }   
+    }
+}
+

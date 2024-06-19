@@ -20,3 +20,13 @@
         }
     }
 }
+
+.titleGrande{
+    background-color: #333333;    
+    &__superior{
+        @include tituloSuperior();
+    }
+    &__intermedio{
+        @include tituloIntermedio(); 
+    }
+}

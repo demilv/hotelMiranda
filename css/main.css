@@ -257,6 +257,29 @@ body {
   padding: 1em 0 0 0.5em;
 }
 
+.titleGrande {
+  background-color: #333333;
+}
+.titleGrande__superior {
+  font-family: "Archivo", sans-serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  padding: 5em 0 2em 1em;
+  line-height: 1.15em;
+  letter-spacing: 0.2em;
+}
+.titleGrande__intermedio {
+  font-family: "Old Standard TT", serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 200;
+  font-size: 3.5em;
+  padding-left: 0.25em;
+  letter-spacing: -0.075em;
+}
+
 .contact__medios__containers {
   position: relative;
   display: grid;
@@ -357,6 +380,7 @@ body {
   background-color: #BEAD8E;
   font-weight: 700;
   font-size: 1em;
+  height: 3.75em;
   border: none;
   width: 16.15em;
   height: 3.75em;
@@ -381,6 +405,71 @@ body {
 }
 .contactForm__img5 {
   top: 22.3em;
+}
+
+.titleGrande {
+  height: 46.25em;
+}
+.titleGrande__button {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  font-weight: 700;
+  font-size: 1em;
+  height: 3.75em;
+  border: none;
+  width: 16.15em;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.85em;
+  line-height: 0.9em;
+  letter-spacing: 0.15em;
+}
+.titleGrande__button--negro {
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+  background-color: transparent;
+}
+.titleGrande__button--grande {
+  width: 18.3em;
+}
+.titleGrande__availability {
+  margin-top: 5em;
+  height: 22.25em;
+  background-color: #222222;
+}
+.titleGrande__availability__txt {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 1em;
+  line-height: 1.2em;
+  padding-top: 2em;
+  margin-bottom: 1.5em;
+}
+.titleGrande__availability__container {
+  margin-left: 1em;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  padding-bottom: 0.8em;
+  width: 25.5em;
+}
+.titleGrande__availability__container__imgButton {
+  background-color: transparent;
+  border: none;
+}
+.titleGrande__availability__dates {
+  margin-left: 1em;
+  width: 23.4em;
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
 }
 
 /*# sourceMappingURL=main.css.map */
