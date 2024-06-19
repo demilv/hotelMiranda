@@ -408,8 +408,8 @@ body {
 }
 
 .titleGrande {
-  height: 44.25em;
-  margin-bottom: 10em;
+  height: 49.25em;
+  margin-bottom: 11em;
 }
 .titleGrande__button {
   font-family: "Roboto", sans-serif;
@@ -421,7 +421,7 @@ body {
   border: none;
   width: 16.15em;
   margin-left: 1em;
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   font-family: "Archivo", sans-serif;
   font-size: 0.85em;
   line-height: 0.9em;
@@ -436,7 +436,7 @@ body {
 }
 .titleGrande__availability {
   margin-top: 5em;
-  height: 20.25em;
+  height: 23.25em;
   background-color: #222222;
 }
 .titleGrande__availability__txt {
@@ -455,7 +455,7 @@ body {
   border: none;
   border-bottom: 2px solid #BEAD8E;
   padding-bottom: 0.8em;
-  width: 25.5em;
+  width: 21.5em;
 }
 .titleGrande__availability__container__imgButton {
   background-color: transparent;
@@ -513,6 +513,95 @@ body {
   width: 16.15em;
   line-height: 0.9em;
   letter-spacing: 0.15em;
+}
+
+.mitad {
+  margin-top: 4em;
+  height: 30.5em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.mitad__superior {
+  height: 11.316em;
+}
+.mitad__superior__img {
+  max-width: 17em;
+}
+.mitad__inferior {
+  padding-top: 3.5em;
+  margin-bottom: 2em;
+}
+
+.mitadBlanca__img {
+  margin-left: 32%;
+  margin-bottom: 1.5em;
+}
+.mitadBlanca__h3 {
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.85em;
+}
+.mitadBlanca__p {
+  text-align: center;
+  max-width: 12.5em;
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+.mitadNegra {
+  background-color: #222222;
+  width: 17em;
+  text-align: center;
+  height: 17.5em;
+}
+.mitadNegra__img {
+  margin-bottom: 1.5em;
+}
+.mitadNegra__h3 {
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.85em;
+}
+.mitadNegra__p {
+  max-width: 12.5em;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  text-align: center;
+  margin-left: 20%;
+}
+
+.sliderRooms {
+  margin-top: 3em;
+  text-align: center;
+}
+.sliderRooms__h4 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-bottom: 2em;
+}
+.sliderRooms__h1 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 3.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,13 +3,13 @@
 @import '../components/explanation.scss';
 
 .titleGrande{
-    height:44.25em;
-    margin-bottom: 10em;
+    height:49.25em;
+    margin-bottom: 11em;
     &__button{
         @include buttonNaranja();
         width:16.15em;        
         margin-left: 1em;
-        margin-top: 1.5em;
+        margin-top: 2.5em;
         font-family: 'Archivo', sans-serif;
         font-size: 0.85em;
         line-height: 0.9em;
@@ -25,7 +25,7 @@
     }
     &__availability{
         margin-top: 5em;
-        height:20.25em;
+        height:23.25em;
         background-color: #222222;     
         &__txt{
             @include font-family($font3, $color1, $bgcolor0, $weight700, $size1);
@@ -39,7 +39,7 @@
             border: none; 
             border-bottom: 2px solid #BEAD8E; 
             padding-bottom: 0.8em;
-            width: 25.5em;
+            width: 21.5em;
             &__imgButton{
                 background-color: transparent;
                 border: none;
@@ -55,6 +55,7 @@
         }   
     }
 }
+
 .aboutUs{
     margin-left: 1em;
     &__h4{
@@ -74,6 +75,73 @@
         width:16.15em;               
         line-height: 0.9em;
         letter-spacing: 0.15em; 
+    }
+}
+
+.mitad{
+    margin-top: 4em;
+    height:30.5em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    &__superior{
+        height:11.316em;
+        &__img{
+            max-width: 17em;
+        }
+    }
+    &__inferior{
+        padding-top: 3.5em;
+        margin-bottom: 2em; 
+    }    
+}
+
+.mitadBlanca{
+    &__img{
+        margin-left: 32%;
+        margin-bottom: 1.5em;
+    }
+    &__h3{
+        text-align: center;
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size185)
+    }
+    &__p{
+        text-align: center;
+        max-width:12.5em;
+        @include font-family($font3, $color2, $bgcolor0, $weight400, $size085)
+    }
+}
+
+.mitadNegra{
+    background-color: #222222;
+    width:17em;
+    text-align: center;
+    height:17.5em;
+    &__img{
+        margin-bottom: 1.5em;
+    }
+    &__h3{
+        text-align: center;
+        @include font-family($font1, $color1, $bgcolor0, $weight400, $size185)
+    }
+    &__p{
+        max-width:12.5em;
+        @include font-family($font3, $color1, $bgcolor0, $weight400, $size085);        
+        text-align: center;        
+        margin-left: 20%;
+    }
+}
+
+.sliderRooms{
+    margin-top: 3em;
+    text-align: center;
+    &__h4{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        margin-bottom: 2em;
+    }
+    &__h1{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
     }
 }
 
