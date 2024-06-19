@@ -10,7 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script  src="./js/dateButton.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="./js/dateButton.js" defer></script>
+    <script src="./js/swiper1.js" defer></script>
 </head>
 
 <body>
@@ -81,10 +83,47 @@
             <h4 class="sliderRooms__h4">ROOMS</h4>
             <h1 class="sliderRooms__h1">Hand Picked Rooms</h1>
         </article>
-
+    
         <article class="sectionSlider">
-            <div class="swiper-container"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room1.jpg"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room2.jpg"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room3.jpg"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room4.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </article>
 
+        <article class="roomSample">
+            <h3 class="roomSample__h3">Minimal Duplex Room</h3>
+            <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="roomSample__priceContainer">
+                <h3 class="roomSample__priceContainer__price">$345</h3>
+                <h6 class="roomSample__priceContainer__night">/Night</h6>
+            </div>
         </article>
     </section>
         
