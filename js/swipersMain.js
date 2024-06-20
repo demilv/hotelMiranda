@@ -27,3 +27,13 @@ const swiper3 = new Swiper('.swiper3', {
     prevEl: '.swiper-button-prev3',
   },  
 });
+
+const swiper4 = new Swiper('.swiper4', {  
+  direction: 'horizontal',
+  loop: true,  
+
+  pagination: {
+    el: '.swiper-pagination4',
+    clickable: true
+  },  
+});
