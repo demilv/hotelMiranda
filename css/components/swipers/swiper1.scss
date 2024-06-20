@@ -1,0 +1,33 @@
+@mixin slideInfoMixin (){
+    width: 100%;
+    max-width: 23.438em;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin slideInfoMainImg(){
+    width:100%;
+    max-width: 23em;
+}
+
+@mixin swiperMixin(){
+    position: relative;
+    width:23em;
+    height:30em;
+}
+
+@mixin swiper-button-prevMixin{
+    color:rgb(2, 2, 2) !important;
+    background-color: white !important;
+    width:2em !important; 
+    height: 2em !important;
+    top: 10em !important;
+}
+
+@mixin swiper-button-nextMixin{
+    color:rgb(255, 255, 255) !important;
+    background-color: #BDAC8D !important;
+    width:2em !important; 
+    height: 2em !important;
+    top: 10em !important;
+}

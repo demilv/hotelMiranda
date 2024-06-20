@@ -1,6 +1,11 @@
 @import '../components/text.scss';
 @import '../components/button.scss';
 @import '../components/explanation.scss';
+@import '../components/swipers/swiper1.scss';
+@import '../components/swipers/swiper2.scss';
+@import '../components/swipers/swiper3.scss';
+@import '../components/roomCard.scss';
+@import '../components/NumerosMasivos.scss';
 
 .titleGrande{
     height:49.25em;
@@ -148,64 +153,141 @@
 }
 
 .slideInfo{
-    width: 100%;
-    max-width: 23.438em;
+    padding-top: 2em;
+    @include slideInfoMixin();
     &__imgRepeat{
         margin-left: 11%;
         position:absolute;
-        top: -2em;
+        top: 0;
+        z-index: 10;
     }
     &__mainImg{        
-        max-width: 23.438em;
+        @include slideInfoMainImg();
     }
 }
 
-.swiper-container{
-    position: relative;
-    width:23em;
-    max-height:21em;
+.swiper{
+    @include swiperMixin();
 }
 
 .swiper-button-prev{
-    color:rgb(2, 2, 2) !important;
-    background-color: white !important;
-    width:2em !important; 
-    height: 2em !important;
+    @include swiper-button-prevMixin()
+}
+.swiper-button-prev::after{
+    font-size:1em !important;
 }
 
 .swiper-button-next{
-    color:rgb(255, 255, 255) !important;
-    background-color: #BDAC8D !important;
-    width:2em !important; 
-    height: 2em !important;
+    @include swiper-button-nextMixin();    
+}
+.swiper-button-next::after{
+    font-size:1em !important;
 }
 
 .roomSample{    
-    max-width: 20.938em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    @include cardContainerMixin();
     &__h3{
-        @include font-family($font1, $color2, $bgcolor0, $weight400, $size185);
-        margin-bottom:0.5em;
+        @include cardH3Mixin();
     }
     &__p{
-        @include font-family($font3, $color3, $bgcolor0, $weight400, $size1);
-        line-height: 1.5em;
-        margin-bottom: 0.7em;
+        @include cardPMixin();
     }
     &__priceContainer{
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+       @include priceContainerMixin();
         &__price{
-            @include font-family($font2, $color4, $bgcolor0, $weight700, $size2);
+            @include cardPriceMixin();
         }
         &__night{
-            @include font-family($font2, $color4, $bgcolor0, $weight700, $size085);
-            margin-top: 1.1em;
+            @include cardNightMixin();
         }
     }
+}
+
+.intro{
+    height: 52em;
+    background-color: #222222;
+    padding-left: 1em;
+    padding-top: 4em;
+
+    &__h4{
+        @include font-family($font2, $color4, $bgcolor0, $weight700, $size085);
+        line-height: 0.95em;
+        letter-spacing: 0.17em;
+        margin-bottom: 2em;
+    }
+    &__h2{
+        @include font-family($font1, $color1, $bgcolor0, $weight400, $size35);
+        margin-bottom: 0.35em;
+    }
+    &__p{
+        @include font-family($font2, $color3, $bgcolor0, $weight400, $size085);
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    &__iframe{
+        width: 21.5em;
+        height:15em;
+        margin-bottom: 1.5em;
+    }
+    &__button{
+        @include buttonNaranja();
+        width: 13.15em;
+    }
+}
+
+.facilities{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    &__h4{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        letter-spacing: 0.17em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5em;
+    }
+    &__h2{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
+        letter-spacing: -0.08em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+}
+
+.swiper2{
+    @include swiperMixin2();
+    margin-bottom: 4em;
+}
+
+.slideInfo2{
+    &__iconImg{
+        width:4.25em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+    }
+    &__numeroMasivo2{
+        @include font-family($font2, $color5, $bgcolor0, $weight700, $size1);
+        @include numeroMasivo2();
+    }
+    &__h3{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size185);
+        letter-spacing: -0.015em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    &__p{
+        @include font-family($font2, $color3, $bgcolor0, $weight400, $size085);
+        margin-left: 2.5em;
+        width:18em;
+    }
+}
+
+.swiper-pagination-bullet{
+    @include swiper-pagination-bulletMixin();
+}
+
+.swiper-pagination-bullet-active{
+    @include swiper-pagination-bullet-activeMixin();
 }
