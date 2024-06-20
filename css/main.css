@@ -831,4 +831,86 @@ body {
   background-color: #BEAD8E !important;
 }
 
+.foodMenu {
+  height: 47.375em;
+  width: 23em;
+  padding-left: 1em;
+}
+.foodMenu__img {
+  width: 7.15em;
+  margin-left: 73.5%;
+}
+.foodMenu__h4 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.17em;
+  margin-bottom: 1.5em;
+}
+.foodMenu__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 3.5em;
+  letter-spacing: -0.08em;
+  margin-bottom: 0.5em;
+}
+
+.swiper3 {
+  position: relative;
+  width: 23em;
+  height: 30em;
+}
+
+.sliderInfo3__group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.sliderInfo3__group__imgFood {
+  max-width: 8.5em;
+  margin-right: 1.5em;
+}
+.sliderInfo3__group__containerData1 {
+  display: flex;
+  flex-direction: column;
+}
+.sliderInfo3__group__containerData1__h3 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: -0.04em;
+}
+.sliderInfo3__group__containerData1__p {
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin-left: 0.2em;
+}
+
+.swiper-button-prev3 {
+  color: rgb(2, 2, 2) !important;
+  background-color: rgb(249, 249, 249) !important;
+  width: 2em !important;
+  height: 2em !important;
+  top: 22em !important;
+  left: 73% !important;
+}
+
+.swiper-button-next3 {
+  color: rgb(255, 255, 255) !important;
+  background-color: #BDAC8D !important;
+  width: 2em !important;
+  height: 2em !important;
+  top: 22em !important;
+}
+
 /*# sourceMappingURL=main.css.map */

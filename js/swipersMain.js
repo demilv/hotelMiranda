@@ -18,3 +18,12 @@ const swiper2 = new Swiper('.swiper2', {
   },  
 });
   
+const swiper3 = new Swiper('.swiper3', {  
+  direction: 'horizontal',
+  loop: true,  
+
+  navigation: {
+    nextEl: '.swiper-button-next3',
+    prevEl: '.swiper-button-prev3',
+  },  
+});

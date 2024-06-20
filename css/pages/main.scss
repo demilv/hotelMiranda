@@ -291,3 +291,61 @@
 .swiper-pagination-bullet-active{
     @include swiper-pagination-bullet-activeMixin();
 }
+
+.foodMenu{
+    height:47.375em;
+    width:23em;
+    padding-left: 1em;
+    &__img{
+        width:7.15em;
+        margin-left: 73.5%;
+    }
+    &__h4{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        letter-spacing: 0.17em;
+        margin-bottom: 1.5em;   
+    }
+    &__h2{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
+        letter-spacing: -0.08em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.swiper3{
+    @include swiperMixin3();
+}
+
+.sliderInfo3{
+    &__group{
+        display:flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        &__imgFood{
+            max-width:8.5em;
+            margin-right: 1.5em;
+        }
+        &__containerData1{
+            display: flex;
+            flex-direction: column;
+            &__h3{
+                @include font-family($font1, $color2, $bgcolor0, $weight400, $size15);
+                letter-spacing: -0.04em;
+            }
+            &__p{
+                @include font-family($font3, $color2, $bgcolor0, $weight400, $size085);
+                line-height: 1.5em;
+                margin-left: 0.2em;
+            }
+        }
+    }
+}
+
+.swiper-button-prev3{
+    @include swiper-button-prevMixin3();
+
+}
+
+.swiper-button-next3{
+    @include swiper-button-nextMixin3();    
+}

@@ -1,0 +1,22 @@
+@mixin swiperMixin3(){
+    position: relative;
+    width:23em;
+    height:30em;
+}
+
+@mixin swiper-button-prevMixin3{
+    color:rgb(2, 2, 2) !important;
+    background-color: rgb(249, 249, 249) !important;
+    width:2em !important; 
+    height: 2em !important;
+    top: 22em !important;
+    left: 73% !important;
+}
+
+@mixin swiper-button-nextMixin3{
+    color:rgb(255, 255, 255) !important;
+    background-color: #BDAC8D !important;
+    width:2em !important; 
+    height: 2em !important;
+    top: 22em !important;
+}
