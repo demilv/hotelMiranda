@@ -1,0 +1,13 @@
+@mixin swiperMixin2(){
+    position: relative;
+    width:23em;
+    height:20em;
+}
+
+@mixin swiper-pagination-bulletMixin{
+    background-color: #EDEDED !important;
+}
+
+@mixin swiper-pagination-bullet-activeMixin{
+    background-color: #BEAD8E !important;
+}

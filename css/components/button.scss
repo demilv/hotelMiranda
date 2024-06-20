@@ -8,5 +8,6 @@
   }
 @mixin buttonNaranja(){
   @include font-family($font3, $color1, $bgcolor1, $weight700, $size1);
+  height:3.75em;
   border: none;
 }

@@ -6,8 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/dateButton.js" defer></script>
+    <script src="./js/swipersMain.js" defer></script>
 </head>
 
 <body>
@@ -20,18 +25,313 @@
         <img class="navbar__icon1" src="./assets/Vector.png"/>
         <img class="navbar__icon2" src="./assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
     </navbar>
-    <section class="titlePeque">
-        <h6 class="titlePeque__superior">THE ULTIMATE LUXURY</h6>
-        <h1 class="titlePeque__intermedio">About Us</h1>
-        <div class="titlePeque__container">
-            <h6 class="titlePeque__container__inferior">Home |</h6>
-            <h6 class="titlePeque__container__inferior2">About</h6>
-        </div>
+    <section class="titleGrande">
+        <h6 class="titleGrande__superior">THE ULTIMATE LUXURY EXPERIENCE</h6>
+        <h1 class="titleGrande__intermedio">The Perfect Base For You</h1>
+        <button class="titleGrande__button">TAKE A TOUR</button>
+        <button class="titleGrande__button titlePeque__button--negro">LEARN MORE</button>    
+        <article class="titleGrande__availability">
+            <h5 class="titleGrande__availability__txt">Arrival Date</h5>
+            <div class="titleGrande__availability__container">
+                <button onclick="showPicker()" class="titleGrande__availability__container__imgButton">
+                    <img src="assets/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" />
+                </button>
+                <input id="dateInput" class="titleGrande__availability__dates">
+            </div>
+            <h5 class="titleGrande__availability__txt">LeDeparture Date</h5>
+            <div class="titleGrande__availability__container">
+                <button onclick="showPicker2()" class="titleGrande__availability__container__imgButton">
+                    <img src="assets/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" />
+                </button>
+                <input id="dateInput2" class="titleGrande__availability__dates">
+            </div>
+            <button onclick="window.location.href='./pages/contact.html'" class="titleGrande__button titlePeque__button--grande">CHECK AVAILABILITY</button>
+        </article>
+    </section>
+    <section class="aboutUs">
+        <h4 class="aboutUs__h4">ABOUT US</h4>
+        <h2 class="aboutUs__h2">Discover Our Underground</h2>
+        <p class="aboutUs__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <button class="aboutUs__button">BOOK NOW</button>        
     </section>
 
-    <section class="navigate-contact">
-        <button onclick="window.location.href='./pages/contact.html'">Contact Us</button>
+    <section class="aboutUs2">
+        <article class="mitad">
+            <div class="mitad__superior">
+                <img src="./assets/strongTeamImage.jpg"/>
+            </div>
+            <div class="mitad__inferior mitadBlanca">
+                <img class="mitadBlanca__img" src="./assets/svg-gobbler - 2022-03-01T200745.428 1.png"/>
+                <h3 class="mitadBlanca__h3">Strong Team</h3>
+                <p class="mitadBlanca__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+        </article>
+        <article class="mitad">
+            <div class="mitad__superior">
+                <img class="mitad__superior__img" src="./assets/luxuriousRoom.jpg"/>
+            </div>
+            <div class="mitad__inferior mitadNegra">
+                <img class="mitadNegra__img" src="./assets/svg-gobbler - 2022-03-01T201407.985 1.png"/>
+                <h3 class="mitadNegra__h3">Luxury Room</h3>
+                <p class="mitadNegra__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+        </article>
     </section>
+
+    <section class="Rooms">
+        <article class="sliderRooms">
+            <h4 class="sliderRooms__h4">ROOMS</h4>
+            <h1 class="sliderRooms__h1">Hand Picked Rooms</h1>
+        </article>
+    
+        <article class="sectionSlider">
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room3.jpg"/>
+                            <article class="roomSample">
+                                <h3 class="roomSample__h3">Minimal Duplex Room</h3>
+                                <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="roomSample__priceContainer">
+                                    <h3 class="roomSample__priceContainer__price">$345</h3>
+                                    <h6 class="roomSample__priceContainer__night">/Night</h6>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room2.jpg"/>
+                            <article class="roomSample">
+                                <h3 class="roomSample__h3">Minimal Duplex Room</h3>
+                                <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="roomSample__priceContainer">
+                                    <h3 class="roomSample__priceContainer__price">$345</h3>
+                                    <h6 class="roomSample__priceContainer__night">/Night</h6>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room3.jpg"/>
+                            <article class="roomSample">
+                                <h3 class="roomSample__h3">Minimal Duplex Room</h3>
+                                <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="roomSample__priceContainer">
+                                    <h3 class="roomSample__priceContainer__price">$345</h3>
+                                    <h6 class="roomSample__priceContainer__night">/Night</h6>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo">
+                            <img class="slideInfo__imgRepeat" src="./assets/Frame 57.png" />
+                            <img class="slideInfo__mainImg" src="./assets/Room4.jpg"/>
+                            <article class="roomSample">
+                                <h3 class="roomSample__h3">Minimal Duplex Room</h3>
+                                <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="roomSample__priceContainer">
+                                    <h3 class="roomSample__priceContainer__price">$345</h3>
+                                    <h6 class="roomSample__priceContainer__night">/Night</h6>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev1"></div>
+                <div class="swiper-button-next swiper-button-next1"></div>
+            </div>
+        </article>        
+    </section>
+
+    <section class="intro">
+        <h4 class="intro__h4">INTRO VIDEO</h4>
+        <h2 class="intro__h2">Meet With Our Luxury Place.</h2>
+        <p class="intro__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+        <iframe class="intro__iframe" src="https://www.youtube.com/embed/xkUyIYfmTmg" frameborder="0" allowfullscreen></iframe>
+        <button class="intro__button">BOOK NOW</button>
+    </section>
+
+    <section class="facilities">        
+        <h4 class="facilities__h4">Facilities</h4>
+        <h2 class="facilities__h2">Core Features</h2>
+            <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">    
+                        <div class="slideContent">                        
+                            <div class="slideInfo2">
+                                <h4 class="slideInfo2__numeroMasivo2">01</h4>
+                                <img class="slideInfo2__iconImg" src="./assets/icon 1.png"/>
+                                <h3 class="slideInfo2__h3">Have High Rating</h3>
+                                <p class="slideInfo2__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slideContent">
+                            <div class="slideInfo2">
+                                <h4 class="slideInfo2__numeroMasivo2">02</h4>
+                                <img class="slideInfo2__iconImg" src="./assets/icon 2.png"/>
+                                <h3 class="slideInfo2__h3">Quiet Hours</h3>
+                                <p class="slideInfo2__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">   
+                        <div class="slideContent">
+                            <div class="slideInfo2">
+                                <h4 class="slideInfo2__numeroMasivo2">03</h4>
+                                <img class="slideInfo2__iconImg" src="./assets/icon 3.png"/>
+                                <h3 class="slideInfo2__h3">Best Locations</h3>
+                                <p class="slideInfo2__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="slideContent">
+                            <div class="slideInfo2">
+                                <h4 class="slideInfo2__numeroMasivo2">04</h4>
+                                <img class="slideInfo2__iconImg" src="./assets/icon 4.png"/>
+                                <h3 class="slideInfo2__h3">Free Cancellation</h3>
+                                <p class="slideInfo2__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="slideContent">                   
+                            <div class="slideInfo2">
+                                <h4 class="slideInfo2__numeroMasivo2">05</h4>
+                                <img class="slideInfo2__iconImg" src="./assets/icon 5.png"/>
+                                <h3 class="slideInfo2__h3">Payment Options</h3>
+                                <p class="slideInfo2__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="slideContent">
+                            <div class="slideInfo2">
+                                <h4 class="slideInfo2__numeroMasivo2">06</h4>
+                                <img class="slideInfo2__iconImg" src="./assets/icon 6.png"/>
+                                <h3 class="slideInfo2__h3">Special Offers</h3>
+                                <p class="slideInfo2__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination2"></div>
+            </div>             
+    </section>
+        
+    <section class="foodMenu">
+        <img class="foodMenu__img" src="./assets/foodMenuImg.png">
+        <h4 class="foodMenu__h4">Menu</h4>
+        <h2 class="foodMenu__h2">Our Foods Menu</h2>
+        <article class="sectionSlider3">
+            <div class="swiper swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo3">
+                            <div class="sliderInfo3__group">
+                                <img class="sliderInfo3__group__imgFood" src="./assets/comida1.jpg" />                            
+                                <div class="sliderInfo3__group__containerData1">
+                                    <h3 class="sliderInfo3__group__containerData1__h3">Eggs & Bacon</h3>
+                                    <p class="sliderInfo3__group__containerData1__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>                                    
+                                </div>
+                            </div>
+                            <div class="sliderInfo3__group">
+                                <img class="sliderInfo3__group__imgFood" src="./assets/comida2.jpg" />                            
+                                <div class="sliderInfo3__group__containerData1">
+                                    <h3 class="sliderInfo3__group__containerData1__h3">Tea or Coffee</h3>
+                                    <p class="sliderInfo3__group__containerData1__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>                                    
+                                </div>
+                            </div>
+                            <div class="sliderInfo3__group">
+                                <img class="sliderInfo3__group__imgFood" src="./assets/comida1.jpg" />                            
+                                <div class="sliderInfo3__group__containerData1">
+                                    <h3 class="sliderInfo3__group__containerData1__h3">Chia Oatmeal</h3>
+                                    <p class="sliderInfo3__group__containerData1__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">                      
+                        <div class="slideInfo3">
+                            <div class="sliderInfo3__group">
+                                <img class="sliderInfo3__group__imgFood" src="./assets/comida2.jpg" />                            
+                                <div class="sliderInfo3__group__containerData1">
+                                    <h3 class="sliderInfo3__group__containerData1__h3">Fruit Parfait</h3>
+                                    <p class="sliderInfo3__group__containerData1__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sliderInfo3__group">
+                            <img class="sliderInfo3__group__imgFood" src="./assets/comida1.jpg" />                            
+                            <div class="sliderInfo3__group__containerData1">
+                                <h3 class="sliderInfo3__group__containerData1__h3">Marmalade Selection</h3>
+                                <p class="sliderInfo3__group__containerData1__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>                                    
+                            </div>
+                        </div>
+                        <div class="sliderInfo3__group">
+                            <img class="sliderInfo3__group__imgFood" src="./assets/comida2.jpg" />                            
+                            <div class="sliderInfo3__group__containerData1">
+                                <h3 class="sliderInfo3__group__containerData1__h3">Cheese Plate</h3>
+                                <p class="sliderInfo3__group__containerData1__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>                                    
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+                <div class="swiper-button-prev swiper-button-prev3"></div>
+                <div class="swiper-button-next swiper-button-next3"></div>
+            </div>
+        </article>
+
+        <article class="sectionSlider4">
+            <div class="swiper swiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide4">                      
+                        <div class="sliderInfo4">
+                            <img class="sliderInfo4__img" src="./assets/restaurante1.jpg"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide4">                      
+                        <div class="sliderInfo4">
+                            <img class="sliderInfo4__img" src="./assets/restaurante2.jpg"/>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide4">                      
+                        <div class="sliderInfo4">
+                            <img class="sliderInfo4__img" src="./assets/restaurante3.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination4"></div>
+            </div>
+        </article>
+    </section>
+
+    <section class="achievements">
+        <img class="achievements__img" src="./assets/icon rocket.svg"/>
+        <h2 class="achievements__h2">84k</h2>
+        <h5 class="achievements__h5">Projects are completed</h5>
+        <img class="achievements__img" src="./assets/icon people.png"/>
+        <h2 class="achievements__h2">10M</h2>
+        <h5 class="achievements__h5">Active Backers Around The World</h5>
+        <img class="achievements__img" src="./assets/icon stonks.png"/>
+        <h2 class="achievements__h2">02k</h2>
+        <h5 class="achievements__h5">Categories Served</h5>
+        <img class="achievements__img" src="./assets/icon book.png"/>
+        <h2 class="achievements__h2">100M</h2>
+        <h5 class="achievements__h5">Idea Raised Funds</h5>
+    </section>
+
+
+        
 
     <footer>
         <section class="backImg">
