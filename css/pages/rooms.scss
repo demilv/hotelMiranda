@@ -1,0 +1,11 @@
+@import '../components/swipers/swiper1.scss';
+
+.roomSlider{
+    padding-top: 3em;  
+    height:200em;  
+}
+
+.swiperM{
+    @include swiperMixinMasivo();
+}
+

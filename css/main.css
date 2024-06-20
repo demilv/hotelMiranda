@@ -965,4 +965,15 @@ body {
   margin-bottom: 4em;
 }
 
+.roomSlider {
+  padding-top: 3em;
+  height: 200em;
+}
+
+.swiperM {
+  position: relative;
+  width: 23em;
+  height: 200em;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -16,6 +16,12 @@
     height:30em;
 }
 
+@mixin swiperMixinMasivo(){
+    position: relative;
+    width:23em;
+    height:200em;
+}
+
 @mixin swiper-button-prevMixin{
     color:rgb(2, 2, 2) !important;
     background-color: white !important;
