@@ -259,6 +259,14 @@
 .swiper2{
     @include swiperMixin2();
     margin-bottom: 4em;
+
+    .swiper-pagination-bullet{
+        @include swiper-pagination-bulletMixin();
+    }
+    
+    .swiper-pagination-bullet-active{
+        @include swiper-pagination-bullet-activeMixin();
+    }
 }
 
 .slideInfo2{
@@ -285,13 +293,7 @@
     }
 }
 
-.swiper-pagination-bullet{
-    @include swiper-pagination-bulletMixin();
-}
 
-.swiper-pagination-bullet-active{
-    @include swiper-pagination-bullet-activeMixin();
-}
 
 
 

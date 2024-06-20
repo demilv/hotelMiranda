@@ -1,11 +1,85 @@
 @import '../components/swipers/swiper1.scss';
+@import '../components/roomCard.scss';
 
 .roomSlider{
     padding-top: 3em;  
-    height:200em;  
+    height:205em;  
+}
+
+.slideInfo{
+    padding-top: 2em;
+    @include slideInfoMixin();
+    &__imgRepeat{
+        margin-left: 11%;
+        position:absolute;
+        top: 0;
+        z-index: 10;
+    }
+    &__mainImg{        
+        @include slideInfoMainImg();
+    }
 }
 
 .swiperM{
     @include swiperMixinMasivo();
+    .swiper-pagination-bullet{
+        @include swiper-pagination-bulletMixinM();
+    }
+
+    .swiper-button-prevM2{
+        top: 99.5% !important;
+        left: 25% !important;
+        color: black !important;
+        background-color: transparent !important;
+        z-index: 99999;
+    }
+
+    .swiper-button-prevM1{
+        top: 99.5% !important;
+        left: 23.5% !important;
+        color: black !important;
+        background-color: transparent !important;
+        z-index: 99999;
+    }
+
+    .swiper-button-nextM2{
+        top: 99.5% !important;
+        right: 25% !important;
+        color: black !important;
+        background-color: transparent !important;
+    }
+
+    .swiper-button-nextM1{
+        top: 99.5% !important;
+        right: 23.5% !important;
+        color: black !important;
+        background-color: transparent !important;
+    }
+    
+    .swiper-pagination-bullet-active{
+        @include swiper-pagination-bullet-activeMixinM();
+    }
 }
 
+.roomSample{    
+    @include cardContainerMixinM();
+    &__h3{
+        @include cardH3Mixin();
+    }
+    &__p{
+        @include cardPMixin();
+    }
+    &__priceContainer{
+       @include priceContainerMixin();
+        &__price{
+            @include cardPriceMixin();
+        }
+        &__night{
+            @include cardNightMixin();
+            font-size:1em;
+        }
+        &__book{
+            @include cardBookMixin();
+        }
+    }
+}

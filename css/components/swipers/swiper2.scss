@@ -11,3 +11,25 @@
 @mixin swiper-pagination-bullet-activeMixin{
     background-color: #BEAD8E !important;
 }
+
+@mixin swiper-pagination-bulletMixinM{
+    background-color: #EDEDED !important;
+    padding-top: 0.5em;
+    width: 2em;
+    height: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+@mixin swiper-pagination-bullet-activeMixinM{
+    background-color: #BEAD8E !important;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 0.5em;
+    width: 2em;
+    height: 2em;
+    font-size: 0.85em;
+    font-weight: 700;
+    border-radius: 0;
+}
