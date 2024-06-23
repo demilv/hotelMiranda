@@ -1480,5 +1480,37 @@ body {
   font-weight: 400;
   font-size: 1em;
 }
+.details__cancellation__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2.5em;
+  border-bottom: 0.2px solid #777777;
+}
+.details__cancellation__p {
+  margin-top: 2em;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 5em;
+}
+.details__relatedRooms__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2.5em;
+  border-bottom: 0.2px solid #777777;
+}
+.details__relatedRooms .roomDetailsSlider {
+  margin-bottom: 5em;
+}
+.details__relatedRooms .swiperRoomDetails {
+  height: 30em;
+  width: 20.5em;
+}
 
 /*# sourceMappingURL=main.css.map */

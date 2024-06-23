@@ -104,6 +104,34 @@
             @include font-family($font2, $color3, $bgcolor0, $weight400, $size1);
         }
     }
+
+    &__cancellation{
+        &__h2{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+            border-bottom: 0.2px solid #777777;
+        }
+        &__p{
+            margin-top: 2em;
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size1);
+            margin-bottom: 5em;
+        }
+    }
+
+    &__relatedRooms{
+        &__h2{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+            border-bottom: 0.2px solid #777777;
+        }
+        .roomDetailsSlider{
+            margin-bottom: 5em;
+        }
+        .swiperRoomDetails{
+            height:30em;
+            width:20.5em
+        }
+
+    }
+
 }
 
 
