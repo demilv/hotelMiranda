@@ -1262,4 +1262,71 @@ body {
   color: #222222;
 }
 
+.funFacts {
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+  padding: 0 1.5em 0 1.5em;
+  max-width: 23em;
+}
+.funFacts__h5 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-bottom: 1.5em;
+}
+.funFacts__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 3.5em;
+  margin-bottom: 1em;
+}
+
+.facts {
+  max-width: 23em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  display: flex;
+  flex-direction: row;
+}
+.facts__img1 {
+  width: 4.6em;
+  height: 4.8em;
+}
+.facts__dataContainer {
+  margin-left: 1.5em;
+}
+.facts__dataContainer__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 3.5em;
+  letter-spacing: -0.11em;
+}
+.facts__dataContainer__h5 {
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 1em;
+}
+.facts__imgArrow {
+  width: 2em;
+  height: 2em;
+  margin-left: auto;
+  margin-top: 1.5em;
+}
+
+.sliderInfo4__imgAbout {
+  width: 20.5em;
+}
+
+.swiper-pagination4About {
+  left: -5% !important;
+}
+
 /*# sourceMappingURL=main.css.map */
