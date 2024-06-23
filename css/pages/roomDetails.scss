@@ -1,0 +1,139 @@
+.titlePeque__containerRDetails{
+    width:15em;
+    margin-left: 7em;
+}
+
+.details{
+    margin-top: 3em;
+    padding: 0 1.5em 0 1.5em;
+    &__h2{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+        margin-bottom: 0.3em;
+    }
+    &__h5{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        margin-bottom: 1em;
+    }
+    &__room{
+        margin: 1.5em 0 2.5em 0;
+        width:20.5em        
+    }
+    &__availability{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3em;
+        &__container{
+            padding: 0 1em 0 1em;
+        }
+        &__h4{
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size125);
+            letter-spacing: -0.03em;
+            margin-bottom: 1.25em;
+        }
+        &__h6{
+            text-align: left;
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size085);
+            margin-bottom: 0.75em;
+        }
+        &__inputDate{
+            width:22em;
+            height:3.75em;
+            @include font-family($font2, $color3, $bgcolor2, $weight400, $size085);
+            padding: 0 1.25em 0 1.25em;
+            margin-bottom:0.75em;
+            border: transparent;
+        }
+        &__button{
+            margin: 0.5em 0 3em 0;
+            @include buttonNaranja();
+            width:18.5em;
+        }
+        &__p{
+            text-align: left;
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+            line-height:1.5em
+        }
+    }
+
+    &__amenities{
+        display:flex;
+        flex-direction: column;
+        margin-bottom:5em;
+        &__h2, &__h2Founder{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+            margin-bottom: 0.8em;
+            letter-spacing: -0.08em;
+        }
+        &__listContainer{
+            display:flex;
+            flex-direction: row;
+            border-top: 0.2px solid #777777;
+            padding-top: 2em;
+            margin-bottom: 5em;
+            li{
+                list-style-type: none;
+                margin-right: 1.8em;
+                @include font-family($font3, $color3, $bgcolor0, $weight700, $size085);
+                font-weight: 500;
+                
+                img{
+                    margin-right: 1em;
+                }
+            }
+        }
+        &__founderImg{
+            width:9.5em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0.5em;
+        }
+        &__h2Founder{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__h5{
+            margin-left: auto;
+            margin-right: auto;
+            @include font-family($font2, $color4, $bgcolor0, $weight700, $size085);
+            letter-spacing: 0.17em;
+            margin-bottom: 1.75em;
+        }
+        &__p{
+            text-align: center;
+            @include font-family($font2, $color3, $bgcolor0, $weight400, $size1);
+        }
+    }
+
+    &__cancellation{
+        &__h2{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+            border-bottom: 0.2px solid #777777;
+        }
+        &__p{
+            margin-top: 2em;
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size1);
+            margin-bottom: 5em;
+        }
+    }
+
+    &__relatedRooms{
+        &__h2{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+            border-bottom: 0.2px solid #777777;
+        }
+        .roomDetailsSlider{
+            margin-bottom: 5em;
+        }
+        .swiperRoomDetails{
+            height:30em;
+            width:20.5em
+        }
+
+    }
+
+}
+
+
+
+
