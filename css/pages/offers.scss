@@ -1,0 +1,93 @@
+.offers{
+    padding: 3em 1.5em 4em 1.5em;
+    background-color: #f4f4f4;    
+}
+
+.products{    
+    background-color: white;
+    margin-bottom: 2em;
+    &__img{
+        width:20.5em;
+    }
+    &__priceContainer{
+        position: relative;
+        &__pricePositioning{
+            position: absolute;
+            top:3.5em;
+            left:62%;
+        }
+        &__nightPositioning{
+            position: absolute;
+            top:6.8em;
+            left:82%;
+        }
+        &__realPricePositioning{
+            color: #DE5777;
+            font-size: 2.5em;
+            position: absolute;
+            top:3.6em;
+            left:55%;
+        }
+        &__realNightPositioning{
+            color: #DE5777;
+            font-size: 1.25em;
+            position: absolute;
+            top:7em;
+            left:82%;
+        }
+    }
+    &__h5{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        letter-spacing: 0.17em;
+        margin: 0.75em 0 0.5em 1em;
+    }
+    &__h2{
+        margin-left: 0.4em;
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+        letter-spacing: -0.08em;
+    }
+
+    &__p{
+        margin: 1em;
+        @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+    }
+    .noLine{
+        border-top: transparent;
+        padding: 0 1em;
+        margin-bottom: 0.75em;
+        ul{
+            margin-top: 1em;
+            li{            
+                margin-bottom: 1em;
+            }
+        }
+    }
+    &__button{
+        @include buttonNaranja();
+        margin-left: 1em;
+        width:13.5em;
+        margin-bottom: 2em;
+    }
+
+}
+
+.blackPopularRooms{
+    background-color: #222222;
+    padding-bottom: 0.1em;
+    &__h5{
+        @include font-family($font2, $color4, $bgcolor0, $weight400, $size085);
+        letter-spacing: 0.17em;
+        text-align: center;
+        padding-top: 2.5em;
+        margin-bottom: 2em
+    }
+    &__h2{
+        @include font-family($font1, $color1, $bgcolor0, $weight400, $size25);
+        letter-spacing: -0.07em;
+        text-align: center;
+    }
+    .roomSampleWhite{
+        background-color: white;
+        padding-bottom: 3em;
+    }
+}
