@@ -70,3 +70,24 @@
     }
 
 }
+
+.blackPopularRooms{
+    background-color: #222222;
+    padding-bottom: 0.1em;
+    &__h5{
+        @include font-family($font2, $color4, $bgcolor0, $weight400, $size085);
+        letter-spacing: 0.17em;
+        text-align: center;
+        padding-top: 2.5em;
+        margin-bottom: 2em
+    }
+    &__h2{
+        @include font-family($font1, $color1, $bgcolor0, $weight400, $size25);
+        letter-spacing: -0.07em;
+        text-align: center;
+    }
+    .roomSampleWhite{
+        background-color: white;
+        padding-bottom: 3em;
+    }
+}

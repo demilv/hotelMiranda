@@ -1602,4 +1602,33 @@ body {
   margin-bottom: 2em;
 }
 
+.blackPopularRooms {
+  background-color: #222222;
+  padding-bottom: 0.1em;
+}
+.blackPopularRooms__h5 {
+  font-family: "Archivo", sans-serif;
+  color: #BEAD8E;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  letter-spacing: 0.17em;
+  text-align: center;
+  padding-top: 2.5em;
+  margin-bottom: 2em;
+}
+.blackPopularRooms__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2.5em;
+  letter-spacing: -0.07em;
+  text-align: center;
+}
+.blackPopularRooms .roomSampleWhite {
+  background-color: white;
+  padding-bottom: 3em;
+}
+
 /*# sourceMappingURL=main.css.map */
