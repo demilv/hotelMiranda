@@ -1,0 +1,183 @@
+
+.generalInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5em 0 1.5em;
+    margin-bottom: 4em;
+    &__iframe{        
+        width: 21.5em;
+        height:15em;
+        margin: 3em 0 2em 0;
+    }
+    &__explanation{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size2);
+        letter-spacing: -0.07em;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    &__grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height:20em;
+        width:21.5em;
+        justify-content: center;
+        align-items: center;
+        &__specialBackground{
+            background-color: #BEAD8E;
+            height: 10em;
+            display: flex;
+            flex-direction: column;
+            &__img2, &__txt2{                              
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                grid-column: 2;
+                grid-row: 1;
+            }
+            &__img2{
+                width:3.75em;
+                margin-top: 2em;
+                margin-bottom: 0.5em;
+            }
+            &__txt2{
+                @include font-family($font2, $color1, $bgcolor0, $weight700, $size085);
+                letter-spacing: 0.17em;
+            }
+        }
+        &__img1, &__txt1{
+            text-align: center;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        &__img1, &__img3, &__img4{
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 3em;
+        }
+        &__txt1, &__txt3, &__txt4{
+            margin-top: 3.5em;
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size085);
+            letter-spacing: 0.17em;
+        }
+        &__img3, &__txt3{
+            text-align: center;
+            grid-column: 1;
+            grid-row: 2;
+        }
+        &__img4, &__txt4{
+            text-align: center;
+            grid-column: 2;
+            grid-row: 2;
+        }
+    }
+}
+
+.restauranteAboutUs{
+    padding: 0 1.5em 3em 1.5em;
+    margin-bottom: 5em;    
+    background-color: #f2f2f2;    
+    &__img{
+        width: 17.3em;
+        margin-bottom: 1.5em;
+    }
+    &__h4{
+        @include explanationH4();
+    }
+    &__h2{
+        @include explanationH2();
+    }
+    &__p{
+        @include explanationP();
+    }
+    &__button{
+        @include buttonNaranja();
+        width:16.15em;               
+        line-height: 0.9em;
+        letter-spacing: 0.15em; 
+        box-shadow: 0 0.85em 1.5em 0 #BEAD8E5C;
+    }   
+}
+
+.containerRestauranteAboutUs{
+    background-color: white;
+    padding: 0 1.5em 0.5em 1.5em
+}
+
+
+.facilitiesAbout{
+    padding-top: 1.5em;
+    background-color: #222222;    
+}
+
+.swipper2About{
+    height:23em;
+}
+
+
+.slideContentAbout{    
+    padding: 0 1.5em 0 1.5em !important;
+}
+
+.slideInfo2About{
+    background-color: #292929;  
+    padding-top: 2.5em;
+    height:20em;
+}
+
+.numeroMasivoAbout{
+    margin-top: 0.1em;
+    color:#222222
+}
+
+.funFacts{
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+    padding: 0 1.5em 0 1.5em;    
+    max-width:23em;
+    &__h5{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        margin-bottom: 1.5em;
+    }
+    &__h2{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
+        margin-bottom: 1em;
+    }
+}
+
+.facts{
+    max-width:23em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: row;
+    &__img1{
+        width:4.6em;
+        height:4.8em;
+    }
+    &__dataContainer{
+        margin-left: 1.5em;
+        &__h2{
+            @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
+            letter-spacing: -0.11em;
+        }
+        &__h5{
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size1);
+        }
+    }
+    &__imgArrow{
+        width:2em;
+        height:2em;
+        margin-left: auto;
+        margin-top: 1.5em;
+    }
+}
+
+.sliderInfo4__imgAbout{
+    width:20.5em
+}
+
+.swiper-pagination4About{
+    left:-5% !important
+}
