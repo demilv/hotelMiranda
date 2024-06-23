@@ -1,0 +1,58 @@
+.titlePeque__containerRDetails{
+    width:15em;
+    margin-left: 7em;
+}
+
+.details{
+    margin-top: 3em;
+    padding: 0 1.5em 0 1.5em;
+    &__h2{
+        @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
+        margin-bottom: 0.3em;
+    }
+    &__h5{
+        @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+        margin-bottom: 1em;
+    }
+    &__room{
+        margin: 1.5em 0 2.5em 0;
+        width:20.5em        
+    }
+    &__availability{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3em;
+        &__container{
+            padding: 0 1em 0 1em;
+        }
+        &__h4{
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size125);
+            letter-spacing: -0.03em;
+            margin-bottom: 1.25em;
+        }
+        &__h6{
+            text-align: left;
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size085);
+            margin-bottom: 0.75em;
+        }
+        &__inputDate{
+            width:22em;
+            height:3.75em;
+            @include font-family($font2, $color3, $bgcolor2, $weight400, $size085);
+            padding: 0 1.25em 0 1.25em;
+            margin-bottom:0.75em;
+            border: transparent;
+        }
+        &__button{
+            margin: 0.5em 0 3em 0;
+            @include buttonNaranja();
+            width:18.5em;
+        }
+        &__p{
+            text-align: left;
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+            line-height:1.5em
+        }
+    }
+}

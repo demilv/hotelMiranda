@@ -1329,4 +1329,93 @@ body {
   left: -5% !important;
 }
 
+.titlePeque__containerRDetails {
+  width: 15em;
+  margin-left: 7em;
+}
+
+.details {
+  margin-top: 3em;
+  padding: 0 1.5em 0 1.5em;
+}
+.details__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+.details__h5 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-bottom: 1em;
+}
+.details__room {
+  margin: 1.5em 0 2.5em 0;
+  width: 20.5em;
+}
+.details__availability {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.details__availability__container {
+  padding: 0 1em 0 1em;
+}
+.details__availability__h4 {
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.25em;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25em;
+}
+.details__availability__h6 {
+  text-align: left;
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-bottom: 0.75em;
+}
+.details__availability__inputDate {
+  width: 22em;
+  height: 3.75em;
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: #F8F8F8;
+  font-weight: 400;
+  font-size: 0.85em;
+  padding: 0 1.25em 0 1.25em;
+  margin-bottom: 0.75em;
+  border: transparent;
+}
+.details__availability__button {
+  margin: 0.5em 0 3em 0;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  font-weight: 700;
+  font-size: 1em;
+  height: 3.75em;
+  border: none;
+  width: 18.5em;
+}
+.details__availability__p {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+
 /*# sourceMappingURL=main.css.map */
