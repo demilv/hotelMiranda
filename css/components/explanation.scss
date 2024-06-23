@@ -3,12 +3,15 @@
 
 @mixin explanationH4(){
     @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
+    margin-bottom: 2em;
 }
 @mixin explanationH2(){
     @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
-    letter-spacing: -0.08em;
+    letter-spacing: -0.08em;    
+    margin-bottom: 0.3em;
 }
 @mixin explanationP(){
     @include font-family($font2, $color3, $bgcolor0, $weight400, $size085);
-    line-height: 1.5em;
+    line-height: 1.5em;    
+    margin-bottom: 3em;
 }

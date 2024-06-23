@@ -475,7 +475,7 @@ body {
 }
 
 .aboutUs {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 .aboutUs__h4 {
   font-family: "Archivo", sans-serif;
@@ -1095,6 +1095,147 @@ body {
   font-size: 1em;
   margin-top: 1.1em;
   margin-left: 1.5em;
+}
+
+.generalInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5em 0 1.5em;
+  margin-bottom: 4em;
+}
+.generalInfo__iframe {
+  width: 21.5em;
+  height: 15em;
+  margin: 3em 0 2em 0;
+}
+.generalInfo__explanation {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: -0.07em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.generalInfo__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 20em;
+  width: 21.5em;
+  justify-content: center;
+  align-items: center;
+}
+.generalInfo__grid__specialBackground {
+  background-color: #BEAD8E;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+}
+.generalInfo__grid__specialBackground__img2, .generalInfo__grid__specialBackground__txt2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 1;
+}
+.generalInfo__grid__specialBackground__img2 {
+  width: 3.75em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+.generalInfo__grid__specialBackground__txt2 {
+  font-family: "Archivo", sans-serif;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.17em;
+}
+.generalInfo__grid__img1, .generalInfo__grid__txt1 {
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+.generalInfo__grid__img1, .generalInfo__grid__img3, .generalInfo__grid__img4 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3em;
+}
+.generalInfo__grid__txt1, .generalInfo__grid__txt3, .generalInfo__grid__txt4 {
+  margin-top: 3.5em;
+  font-family: "Archivo", sans-serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.17em;
+}
+.generalInfo__grid__img3, .generalInfo__grid__txt3 {
+  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+.generalInfo__grid__img4, .generalInfo__grid__txt4 {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.restauranteAboutUs {
+  padding: 0 1.5em 0 1.5em;
+  margin-bottom: 4em;
+  background-color: #f2f2f2;
+}
+.restauranteAboutUs__img {
+  width: 17.3em;
+  margin-bottom: 1.5em;
+}
+.restauranteAboutUs__h4 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.85em;
+  margin-bottom: 2em;
+}
+.restauranteAboutUs__h2 {
+  font-family: "Old Standard TT", serif;
+  color: #111111;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 3.5em;
+  letter-spacing: -0.08em;
+  margin-bottom: 0.3em;
+}
+.restauranteAboutUs__p {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+.restauranteAboutUs__button {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  font-weight: 700;
+  font-size: 1em;
+  height: 3.75em;
+  border: none;
+  width: 16.15em;
+  line-height: 0.9em;
+  letter-spacing: 0.15em;
+  box-shadow: 0 0.85em 1.5em 0 rgba(190, 173, 142, 0.3607843137);
+}
+
+.containerRestauranteAboutUs {
+  background-color: white;
+  padding: 0 1.5em 0 1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

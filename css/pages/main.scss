@@ -64,18 +64,15 @@
 }
 
 .aboutUs{
-    margin-left: 1em;
+    margin-left: 1.5em;
     &__h4{
-        @include explanationH4();
-        margin-bottom: 2em;
+        @include explanationH4();        
     }
     &__h2{
         @include explanationH2();
-        margin-bottom: 0.3em;
     }
     &__p{
         @include explanationP();
-        margin-bottom: 3em;
     }
     &__button{
         @include buttonNaranja();
