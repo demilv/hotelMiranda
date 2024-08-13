@@ -16,7 +16,9 @@
 </head>
 
 <body>
-    <section class="titleGrandeWide"></section>
+    <section class="titleGrandeWide">
+        <p class="titleGrandeWide__text">We Make You Feel Comfortable</p>
+    </section>
     <navbar class="navbar">
         <button class="navbar__menu">≡</button>
         <div class="navbar__recuadro">
@@ -38,25 +40,30 @@
         <h6 class="titleGrande__superior">THE ULTIMATE LUXURY EXPERIENCE</h6>
         <h1 class="titleGrande__intermedio">The Perfect Base For You</h1>
         <button onclick="window.location.href='./pages/roomDetails.html'" class="titleGrande__button">TAKE A TOUR</button>
-        <button onclick="window.location.href='./pages/contact.html'" class="titleGrande__button titlePeque__button--negro">LEARN MORE</button>    
-        <article class="titleGrande__availability">
-            <h5 class="titleGrande__availability__txt">Arrival Date</h5>
-            <div class="titleGrande__availability__container">
-                <button onclick="showPicker()" class="titleGrande__availability__container__imgButton">
-                    <img src="assets/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" />
-                </button>
-                <input id="dateInput" class="titleGrande__availability__dates">
-            </div>
-            <h5 class="titleGrande__availability__txt">LeDeparture Date</h5>
-            <div class="titleGrande__availability__container">
-                <button onclick="showPicker2()" class="titleGrande__availability__container__imgButton">
-                    <img src="assets/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" />
-                </button>
-                <input id="dateInput2" class="titleGrande__availability__dates">
-            </div>
-            <button onclick="window.location.href='./pages/rooms.html'" class="titleGrande__button titlePeque__button--grande">CHECK AVAILABILITY</button>
-        </article>
+        <button onclick="window.location.href='./pages/contact.html'" class="titleGrande__button titlePeque__button--negro">LEARN MORE</button>        
     </section>
+    <article class="availability">
+        <div class="availability__wideContainer">
+            <h5 class="availability__txt">Arrival Date</h5>
+            <div class="availability__container">
+                <button onclick="showPicker()" class="availability__container__imgButton">
+                    <img src="assets/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" />
+                </button>
+                <input id="dateInput" class="availability__dates">
+            </div>
+        </div>
+        <div class="availability__wideContainer">
+            <h5 class="availability__txt">LeDeparture Date</h5>
+            <div class="availability__container">
+                <button onclick="showPicker2()" class="availability__container__imgButton">
+                    <img src="assets/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.png" />
+                </button>
+                <input id="dateInput2" class="availability__dates">
+            </div>
+        </div>
+            <button onclick="window.location.href='./pages/rooms.html'" class="titleGrande__button 
+            titlePeque__button--grande">CHECK AVAILABILITY</button>
+    </article>
     
     <section class="aboutUs">
         <h4 class="aboutUs__h4">ABOUT US</h4>

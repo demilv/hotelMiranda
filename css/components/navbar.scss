@@ -38,12 +38,12 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1250px) {
     .navbar{
         height:7.5em;
         width:74%;
         position: absolute;
-        top:2em;
+        top:2.5em;
         left:13%;
         background-color: white;
         &__recuadro{
@@ -69,7 +69,7 @@
             margin-right: 4.5%;
         }
         &__linkButtonUltimo{
-            margin-right: 20%;
+            margin-right: 0;
         }
         &__iconRecuadro{
             display: flex;
@@ -80,6 +80,12 @@
             height:3.75em;
             border: 2px solid #8585854D;
             margin-right: 1.5em;
+            margin-right: 0; 
+            position: absolute; 
+            right: 4%; 
+            &:not(:last-child) {
+                margin-right: 6em; 
+            }
             &__img1, &__img2{
                 margin-right:0;
                 margin-bottom:1em;

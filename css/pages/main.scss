@@ -13,8 +13,7 @@
 }
 
 .titleGrande{
-    height:49.25em;
-    margin-bottom: 11em;
+    height:28.25em;
     &__button{
         @include buttonNaranja();
         width:16.15em;        
@@ -32,39 +31,40 @@
     }
     &__button--grande{
         width: 18.30em;
+    }   
+}
+
+.availability{    
+    margin-bottom: 11em;
+    height:23.25em;
+    background-color: #222222;     
+    &__txt{
+        @include font-family($font3, $color1, $bgcolor0, $weight700, $size1);
+        margin-left: 1em;
+        line-height: 1.2em;
+        padding-top: 2em;
+        margin-bottom: 1.5em;
     }
-    &__availability{
-        margin-top: 5em;
-        height:23.25em;
-        background-color: #222222;     
-        &__txt{
-            @include font-family($font3, $color1, $bgcolor0, $weight700, $size1);
-            margin-left: 1em;
-            line-height: 1.2em;
-            padding-top: 2em;
-            margin-bottom: 1.5em;
-        }
-        &__container{
-            margin-left: 1em;
-            border: none; 
-            border-bottom: 2px solid #BEAD8E; 
-            padding-bottom: 0.8em;
-            width: 21.5em;
-            display: flex;
-            &__imgButton{
-                background-color: transparent;
-                border: none;
-            }
-        }
-        &__dates{
-            margin-left: 2em;
-            width:23.4em;
+    &__container{
+        margin-left: 1em;
+        border: none; 
+        border-bottom: 2px solid #BEAD8E; 
+        padding-bottom: 0.8em;
+        width: 21.5em;
+        display: flex;
+        &__imgButton{
             background-color: transparent;
             border: none;
-            @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
-
-        }   
+        }
     }
+    &__dates{
+        margin-left: 2em;
+        width:23.4em;
+        background-color: transparent;
+        border: none;
+        @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+
+    }   
 }
 
 .aboutUs{
@@ -399,10 +399,36 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1250px) {
     .titleGrandeWide{
         display:block;
         height:6.25em;
         background-color: #222222;     
+        &__text{
+            @include font-family($font3, $color1, $bgcolor0, $weight400, $size1);
+            padding-top:0.7em;
+            margin-left:13%;   
+        }
     }
+
+    .titleGrande{
+        padding-left: 15%;
+        padding-top: 5%;
+        &__button{
+            margin-top: 4em;            
+        }
+    }
+
+
+    .availability{
+        display:flex;
+        flex-direction: row;
+        height:10em;
+        padding-left: 15%;
+        &__wideContainer{
+            margin-right: 2em;
+        }
+    }
+
+
 }
