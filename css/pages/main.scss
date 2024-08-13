@@ -8,6 +8,10 @@
 @import '../components/roomCard.scss';
 @import '../components/NumerosMasivos.scss';
 
+.titleGrandeWide{
+    display:none;
+}
+
 .titleGrande{
     height:49.25em;
     margin-bottom: 11em;
@@ -392,5 +396,13 @@
     &__h5{
         @include font-family($font3, $color3, $bgcolor0, $weight700, $size1);
         margin-bottom: 4em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .titleGrandeWide{
+        display:block;
+        height:6.25em;
+        background-color: #222222;     
     }
 }

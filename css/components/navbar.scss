@@ -1,3 +1,5 @@
+@import './text.scss';
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -11,6 +13,9 @@
         padding-right: 0.5em;
         margin-left: 1em;
     }
+    &__linkButton, &__linkButtonUltimo{        
+        display:none;
+    }
     &__recuadro{
         width:1em;
         height:1em;
@@ -22,13 +27,63 @@
         width:4em;
         margin-right:4em
     }
-    &__icon1{
+    &__iconRecuadro__img1{
         margin-right: 1.8em;
     }
-    &__icon1, &__icon2{
+    &__iconRecuadro__img1, &__iconRecuadro__img2{
         width:1.5em;
         height:1.5em;
         margin-top:1.25em
     }
 
+}
+
+@media only screen and (min-width: 1000px) {
+    .navbar{
+        height:7.5em;
+        width:74%;
+        position: absolute;
+        top:2em;
+        left:13%;
+        background-color: white;
+        &__recuadro{
+            width:5em;
+            height:5em;
+            margin-top:1em;
+            &__img{
+                width:5.5em;
+                height:5.5em;
+            }
+        }
+        &__imgtxt{
+            width:8.563em;
+            margin-right: 10%;
+        }
+        &__menu{
+            display:none;
+        }
+        &__linkButton, &__linkButtonUltimo{
+            display:inline-block;
+            @include font-family($font2, $color2, $bgcolor0, $weight700, $size1);
+            border:none;
+            margin-right: 4.5%;
+        }
+        &__linkButtonUltimo{
+            margin-right: 20%;
+        }
+        &__iconRecuadro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:1.8em;
+            width:3.75em;
+            height:3.75em;
+            border: 2px solid #8585854D;
+            margin-right: 1.5em;
+            &__img1, &__img2{
+                margin-right:0;
+                margin-bottom:1em;
+            }
+        }
+    }
 }
