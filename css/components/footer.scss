@@ -7,37 +7,45 @@
 }
 
 
-.hotel{
+.hotel {
     padding: 1.5em;
-    &__container{
+
+    &__container {
         @include gridContainer();
-        &__title{
+        grid-template-rows: unset;
+
+        &__title {
             @include font-family($font2, $color1, $bgcolor1, $weight700, $size2);
             font-size: 2.2em;
-            margin-top: 0.2em;          
+            margin-top: 0.2em;
             width: 2.5em;
             height: 2.3em;
             margin-right: 1em;
             text-align: center;
             vertical-align: middle;
-            line-height: 2.4em;     
-            grid-column: 1 / span 1; 
-            grid-row: 1 / span 2;
+            line-height: 2.4em;
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
         }
-        &__h2Primero{
-            @include font-family($font2, $color2, $bgcolor0, $weight700, $size2);
-            margin: 0.3em 0 0.1em 0.3em;
-            grid-column: 2, span 1;
-            grid-row: 1;
+
+        &__wide {
+            &__h2Primero {
+                @include font-family($font2, $color2, $bgcolor0, $weight700, $size2);
+                margin: 0.3em 0 0.1em 0.3em;
+                grid-column: 2 / span 1;
+                grid-row: 1;
+            }
+
+            &__h2Segundo {
+                @include font-family($font2, $color2, $bgcolor0, $weight400, $size2);
+                margin: 0 0 0 0.3em;
+                grid-column: 2 / span 1;
+                grid-row: 1;
+            }
         }
-        &__h2Segundo{
-            @include font-family($font2, $color2, $bgcolor0, $weight400, $size2);
-            margin: 0 0 0 0.3em;
-            grid-column: 2, span 1;
-            grid-row: 2;
-        }        
     }
-    &__text{
+
+    &__text {
         @include font-family($font2, $color3, $bgcolor0, $weight400, $size1);
         line-height: 1.7em;
     }
@@ -119,4 +127,72 @@
 .bottomP1, .bottomP2 {
     @include font-family($font3, $color2, $bgcolor0, $weight700, $size1);
     margin-left: 1em
+}
+
+@media only screen and (min-width: 1250px) {
+    .backImg{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        margin-top:2em
+    }
+
+    .hotelLinksWide{
+        width:25%;
+    }
+    
+    .hotel {
+        margin-right:5%;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+
+            &__title {
+                grid-column: unset;
+                grid-row: unset;
+            }
+
+            &__h2Primero,
+            &__h2Segundo {                    
+                grid-column: unset;
+                grid-row: unset;
+                margin-left: 0; 
+            }
+        }
+
+        &__text {
+            margin: 1em 0;
+            padding-left: 0.5em;
+            padding-right: 5em;
+        }
+    }
+    
+    .links{
+        margin-left: 0em;
+    }
+
+    .services{
+        margin: 0 5% 1.5em 0 
+    }
+
+    .contact{
+        margin-top: 4.5em;
+        min-width: 12em;
+        &__container{
+            grid-template-columns: 30% 70%;   
+        }
+    }
+
+    .copyWide{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    .bottomP1{
+        margin-left: 6em;
+    }
 }
