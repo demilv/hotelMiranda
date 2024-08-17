@@ -16,6 +16,12 @@
     height:30em;
 }
 
+@mixin swiperMixinWide(){
+    position: relative;
+    width:100%;
+    height:48em;
+}
+
 @mixin swiperMixinMasivo(){
     position: relative;
     width:23em;

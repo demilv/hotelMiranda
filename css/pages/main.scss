@@ -430,5 +430,104 @@
         }
     }
 
+    .wideModifier {
+        display: grid;
+        grid-template-columns: 25% 25% 50%; 
+        grid-template-rows: 1fr 1fr;        
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .aboutUs {
+        margin-top:10em;
+        padding-right: 10em;
+        grid-column: 3 / span 1; 
+        grid-row: 1 / span 2;
+    }
+    
+    .aboutUs2 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+    }    
 
+    .mitad{
+        &__superior{
+            margin-bottom: 2em;
+        }
+    }
+
+    .swiper{
+        @include swiperMixinWide()
+    }
+
+    .slideInfo{
+        padding-top: 2em;
+        @include slideInfoMixin();
+        width: 48.125em;
+        max-width: 48.125em;
+        margin: 0 auto;
+        &__imgRepeat{
+            left: 30%;
+            position:absolute;
+            top: 0;
+            z-index: 10;
+        }
+        &__mainImg{
+            margin:0 auto;        
+            width: 48.125em;
+            max-width: 48.125em
+        }
+    }
+
+    .swiper-button-prev{
+        @include swiper-button-prevMixin();
+        top:20em !important;
+        left: 20% !important;
+    }
+    .swiper-button-prev::after{
+        font-size:1em !important;
+    }
+    
+    .swiper-button-next{
+        @include swiper-button-nextMixin();    
+        top:20em !important;
+        right: 20% !important;
+    }
+    .swiper-button-next::after{
+        font-size:1em !important;
+    }
+
+    .introWide{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .intro{
+        padding-left: 0;
+        height:35em;
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20%;
+        &__h4, &__h2, &__p{
+            text-align: left;
+        }
+        &__p, &__h2{
+            padding-right: 50%;
+        }
+        &__iframe{
+            position: absolute;
+            left:55%;
+            width:31em;
+            height:22em
+        }
+    }
+    .additionalWide{
+        width: 30%;
+        background-color: #BEAD8E;
+    }    
 }

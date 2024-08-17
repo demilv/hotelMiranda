@@ -1117,26 +1117,128 @@ body {
   .availability__wideContainer {
     margin-right: 7%;
   }
+  .wideModifier {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .aboutUs {
+    margin-top: 10em;
+    padding-right: 10em;
+    grid-column: 3/span 1;
+    grid-row: 1/span 2;
+  }
+  .aboutUs2 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .mitad__superior {
+    margin-bottom: 2em;
+  }
+  .swiper {
+    position: relative;
+    width: 100%;
+    height: 48em;
+  }
+  .slideInfo {
+    padding-top: 2em;
+    width: 100%;
+    max-width: 23.438em;
+    display: flex;
+    flex-direction: column;
+    width: 48.125em;
+    max-width: 48.125em;
+    margin: 0 auto;
+  }
+  .slideInfo__imgRepeat {
+    left: 30%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  .slideInfo__mainImg {
+    margin: 0 auto;
+    width: 48.125em;
+    max-width: 48.125em;
+  }
+  .swiper-button-prev {
+    color: rgb(2, 2, 2) !important;
+    background-color: white !important;
+    width: 2em !important;
+    height: 2em !important;
+    top: 10em !important;
+    top: 20em !important;
+    left: 20% !important;
+  }
+  .swiper-button-prev::after {
+    font-size: 1em !important;
+  }
+  .swiper-button-next {
+    color: rgb(255, 255, 255) !important;
+    background-color: #BDAC8D !important;
+    width: 2em !important;
+    height: 2em !important;
+    top: 10em !important;
+    top: 20em !important;
+    right: 20% !important;
+  }
+  .swiper-button-next::after {
+    font-size: 1em !important;
+  }
+  .introWide {
+    display: flex;
+    flex-direction: row;
+  }
+  .intro {
+    padding-left: 0;
+    height: 35em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+  }
+  .intro__h4, .intro__h2, .intro__p {
+    text-align: left;
+  }
+  .intro__p, .intro__h2 {
+    padding-right: 50%;
+  }
+  .intro__iframe {
+    position: absolute;
+    left: 55%;
+    width: 31em;
+    height: 22em;
+  }
+  .additionalWide {
+    width: 30%;
+    background-color: #BEAD8E;
+  }
 }
 .roomSlider {
   padding-top: 3em;
   height: 205em;
 }
 
-.slideInfo {
+.slideInfoRooms {
   padding-top: 2em;
   width: 100%;
   max-width: 23.438em;
   display: flex;
   flex-direction: column;
 }
-.slideInfo__imgRepeat {
+.slideInfoRooms__imgRepeat {
   margin-left: 11%;
   position: absolute;
   top: 0;
   z-index: 10;
 }
-.slideInfo__mainImg {
+.slideInfoRooms__mainImg {
   width: 100%;
   max-width: 23em;
 }

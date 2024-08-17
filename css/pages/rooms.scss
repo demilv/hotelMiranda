@@ -6,7 +6,7 @@
     height:205em;  
 }
 
-.slideInfo{
+.slideInfoRooms{
     padding-top: 2em;
     @include slideInfoMixin();
     &__imgRepeat{
