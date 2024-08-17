@@ -728,6 +728,10 @@ body {
   font-size: 3.5em;
 }
 
+.wideFacilities {
+  display: none;
+}
+
 .slideInfo {
   padding-top: 2em;
   width: 100%;
@@ -1218,6 +1222,35 @@ body {
   .additionalWide {
     width: 30%;
     background-color: #BEAD8E;
+  }
+  .wideFacilities {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .slideInfo2 {
+    margin-bottom: 8em;
+  }
+  .notSwiperWide {
+    display: none;
+  }
+  .posicionNumeroMasivo01, .posicionNumeroMasivo02, .posicionNumeroMasivo03 {
+    top: -0.5em;
+  }
+  .posicionNumeroMasivo04, .posicionNumeroMasivo05, .posicionNumeroMasivo06 {
+    top: 2.5em;
+  }
+  .posicionNumeroMasivo01, .posicionNumeroMasivo04 {
+    right: 73%;
+  }
+  .posicionNumeroMasivo02, .posicionNumeroMasivo05 {
+    right: 39%;
+  }
+  .posicionNumeroMasivo03, .posicionNumeroMasivo06 {
+    right: 6%;
   }
 }
 .roomSlider {
