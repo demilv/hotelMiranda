@@ -437,6 +437,7 @@
         flex-direction: row;
         height:10em;
         padding-left: 15%;
+        margin-bottom: 6em;
         &__wideContainer{
             margin-right: 7%;
         }
@@ -593,7 +594,7 @@
     }
 
     .foodMenu{
-        height:68.375em;
+        height:72.375em;
         width:100%;
         text-align: left;
         &__img{
@@ -655,5 +656,19 @@
             width: 23%;
             max-height:12em;
         }
+    }
+
+
+    .achievements{
+        display:flex;
+        flex-direction: row;
+        width:70%;
+        margin: 0 auto;
+    }
+
+    .wideAchievementsGrouping{
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto
     }
 }

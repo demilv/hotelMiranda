@@ -1128,6 +1128,7 @@ body {
     flex-direction: row;
     height: 10em;
     padding-left: 15%;
+    margin-bottom: 6em;
   }
   .availability__wideContainer {
     margin-right: 7%;
@@ -1274,7 +1275,7 @@ body {
     margin-top: 2em;
   }
   .foodMenu {
-    height: 68.375em;
+    height: 72.375em;
     width: 100%;
     text-align: left;
   }
@@ -1322,6 +1323,17 @@ body {
   .sliderInfo4__img {
     width: 23%;
     max-height: 12em;
+  }
+  .achievements {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .wideAchievementsGrouping {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
 .roomSlider {
