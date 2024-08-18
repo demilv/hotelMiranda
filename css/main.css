@@ -955,6 +955,10 @@ body {
   width: 18em;
 }
 
+.wideFood {
+  display: none;
+}
+
 .foodMenu {
   height: 62.375em;
   width: 23em;
@@ -963,6 +967,9 @@ body {
 .foodMenu__img {
   width: 7.15em;
   margin-left: 73.5%;
+}
+.foodMenu__imgWide {
+  display: none;
 }
 .foodMenu__h4 {
   font-family: "Archivo", sans-serif;
@@ -1059,6 +1066,10 @@ body {
 
 .swiper-slide4 {
   height: 5em !important;
+}
+
+.wideNotSlider4 {
+  display: none;
 }
 
 .achievements {
@@ -1228,6 +1239,7 @@ body {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr;
     width: 80%;
+    padding-left: 15%;
     margin: 0 auto;
     position: relative;
   }
@@ -1244,13 +1256,72 @@ body {
     top: 2.5em;
   }
   .posicionNumeroMasivo01, .posicionNumeroMasivo04 {
-    right: 73%;
+    right: 58%;
   }
   .posicionNumeroMasivo02, .posicionNumeroMasivo05 {
-    right: 39%;
+    right: 30%;
   }
   .posicionNumeroMasivo03, .posicionNumeroMasivo06 {
-    right: 6%;
+    right: 2%;
+  }
+  .sectionSlider3 {
+    display: none;
+  }
+  .wideFood {
+    display: flex;
+    flex-direction: row;
+    height: 32em;
+    margin-top: 2em;
+  }
+  .foodMenu {
+    height: 68.375em;
+    width: 100%;
+    text-align: left;
+  }
+  .foodMenu__img {
+    display: none;
+  }
+  .foodMenu__imgWide {
+    display: block;
+    width: 14.15em;
+    margin-left: 4%;
+  }
+  .foodMenu__h4, .foodMenu__h2 {
+    padding-left: 20%;
+  }
+  .slideBoxContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+  }
+  .sliderInfo3__group__containerData1 {
+    text-align: left;
+  }
+  .sliderInfo3__group__containerData1__p {
+    padding-right: 40%;
+  }
+  .swiper-button-prev3 {
+    top: 3% !important;
+    left: 76% !important;
+  }
+  .swiper-button-next3 {
+    top: 3% !important;
+  }
+  .slideBox1, .slideBox2 {
+    padding-top: 6em;
+  }
+  .sectionSlider4 {
+    display: none;
+  }
+  .wideNotSlider4 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    gap: 2em;
+  }
+  .sliderInfo4__img {
+    width: 23%;
+    max-height: 12em;
   }
 }
 .roomSlider {
