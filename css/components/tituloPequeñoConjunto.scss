@@ -30,3 +30,14 @@
         @include tituloIntermedio(); 
     }
 }
+
+@media only screen and (min-width: 1250px) {
+    .titlePeque{
+        height: 22.25em;
+        padding: 6em 20% 0 20%;
+        &__container{
+            margin-top: 2em;
+            margin-left: 80%;
+        }
+    }
+}
