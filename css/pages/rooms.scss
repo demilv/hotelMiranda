@@ -82,19 +82,106 @@
             @include cardBookMixin();
         }
     }
+    &__priceContainerWide{
+        display:none
+    }
 }
 
 @media only screen and (min-width: 1250px) {
-    .swiperM{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center;
-    }
+    
 
     .slideRoomsContainerWide{
         display:flex;
         flex-direction: row;
+        margin-bottom: 2em;
+    }    
+
+    .slideInfoRooms{
+        max-width: 100%!important;
+        @include slideInfoMixin();
+        &__imgRepeat{
+            margin-left: 11%;
+            position:absolute;
+            top: 0;
+            z-index: 10;
+        }
+        &__mainImg{        
+            @include slideInfoMainImg();
+            max-width: 25em;
+        }
+    }
+
+    .roomSample{        
+        max-width: none;
+        display:block;
+        text-align: left;
+        width:30%;
+        margin: 2em 0 2em 2em;
+        &__h3{
+            background-color: #ffffff;
+        }
+        &__priceContainer{
+            display:none;
+            &__night{
+                font-size: 2.25em
+            }
+            &__nightSmall{
+                @include cardNightMixin();
+                font-size: 1em;
+                margin-top: 3.7em;
+            }
+            &__book{
+                margin-left: 0.7em;
+            }
+        }
+        &__smallBorderWide{
+            margin-top: 1em;
+            width:50%;
+            margin-left: 25%;
+            border: 2px solid #F1F1F1
+        }
+        &__priceContainerWide{
+            @include priceContainerMixin();
+            display:block;
+            margin: 3em 0 0 0 
+        }
+    }
+
+    .wideNightContainerChange{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .roomSlider{
+        height:125em;
+    }
+
+    .swiperM{
+        width: 90%;
+        margin-left: 21%;
+        height:122em;
+    
+        .swiper-button-prevM2{
+            left: 22% !important;
+        }
+    
+        .swiper-button-prevM1{
+            left: 20.5% !important;
+        }
+    
+        .swiper-button-nextM2{
+            right: 55% !important;
+        }
+    
+        .swiper-button-nextM1{
+            right: 53.5% !important;
+        }
+    }
+
+    .swiper-paginationM{
+        padding-right: 31%;
+    }
+    .swiper-pagination-bullet{
+        margin-right: 10%;
     }
 }
