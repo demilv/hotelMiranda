@@ -72,6 +72,9 @@
             grid-row: 2;
         }
     }
+    &__gridWide{
+        display:none;
+    }
 }
 
 .restauranteAboutUs{
@@ -109,6 +112,15 @@
 .facilitiesAbout{
     padding-top: 1.5em;
     background-color: #222222;    
+}
+
+.facilitiesh4About{
+    color: #C2C2C2;
+}
+
+.facilitiesh2About{
+    color: #FFFFFF;
+
 }
 
 .swipper2About{
@@ -183,5 +195,116 @@
 }
 
 @media only screen and (min-width: 1250px) {
-    
+    .generalInfo{
+        &__iframe{
+            width:65%;
+            height:40em
+        }
+
+        &__explanation{
+            font-size: 4.5em;
+            padding: 0 19.5% 0 19.5%;
+        }
+
+        &__grid{
+            display:none;
+            &__img1, &__img3, &__img4{
+                width:3.75em;
+                margin-top: 3em;
+                margin-bottom: 0em;
+                padding-bottom: 0em;
+            }
+            &__txt1, &__txt3, &__txt4{
+                margin-top: 1em;
+            }
+            &__specialBackground{
+                height:12em;
+                width: 12em;
+                &__img2{
+                    margin-top: 3em;
+                }
+            }
+        }
+
+        &__gridWide{
+            display: flex;
+            flex-direction: row;
+            width:70%;
+            height:20em;
+            justify-content: center;
+            align-items: center;
+            gap:3%;
+            &__normalBackground{
+                height:12em;
+                width: 12em;
+                display: flex;
+                flex-direction: column;
+            }   
+        }
+    }
+
+    .restauranteAboutUs{
+        width:90%;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: #ffffff;
+        &__img{
+            margin-top: 1.5em;
+            width:100%
+        }
+        &__h4{
+            @include explanationH4();
+            margin-top: 2em
+        }
+        &__h2{
+            @include explanationH2();
+            font-size: 3em;
+        }
+        &__p{
+            @include explanationP();
+        }
+    }
+
+    .containerRestauranteAboutUs{        
+        display:flex;
+        flex-direction: row;
+        margin:0 auto;
+    }
+
+    .restauranteAboutUsWideContainer{
+        display:block;
+        width:45%;
+        padding:3em 10% 0 5%
+    }
+    .restauranteAboutUsWideContainerUnrestricted{
+        display:block;
+        width:45%;
+    }
+
+    .swipper2About{
+        display:none;
+    }
+
+    .funFacts{
+        width:100%;        
+        max-width:none;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+        margin-top: 5em;
+        margin-bottom:5em;
+        justify-content: center;
+        align-items: center; 
+        &__h5{
+            margin-right: 55%;
+        }
+        &__h2{
+            margin-right: 38%;
+        }
+    }
+
+    .containerFacts{
+        display:flex;
+        flex-direction: row;
+    }
 }
