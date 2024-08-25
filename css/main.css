@@ -1562,19 +1562,24 @@ body {
     height: 122em;
   }
   .swiperM .swiper-button-prevM2 {
-    left: 22% !important;
+    top: 99.3% !important;
+    left: 30% !important;
   }
   .swiperM .swiper-button-prevM1 {
-    left: 20.5% !important;
+    top: 99.3% !important;
+    left: 28.5% !important;
   }
   .swiperM .swiper-button-nextM2 {
-    right: 55% !important;
+    top: 99.3% !important;
+    right: 61.5% !important;
   }
   .swiperM .swiper-button-nextM1 {
-    right: 53.5% !important;
+    top: 99.3% !important;
+    right: 60% !important;
   }
   .swiper-paginationM {
     padding-right: 31%;
+    gap: 5em !important;
   }
   .swiper-pagination-bullet {
     margin-right: 10%;
