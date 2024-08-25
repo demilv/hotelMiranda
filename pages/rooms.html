@@ -11,14 +11,25 @@
     <script src="../js/swiperRoom.js" defer></script>
 </head>
 <body>
+    <section class="titleGrandeWide">
+        <p class="titleGrandeWide__text">We Make You Feel Comfortable</p>
+    </section>
     <navbar class="navbar">
         <button class="navbar__menu">≡</button>
         <div class="navbar__recuadro">
-            <img src="../assets/logo.svg"/>
-        </div>
+            <img class="navbar__recuadro__img" src="../assets/logo.svg"/>
+        </div>            
         <img class="navbar__imgtxt" src="../assets/logo-text.svg" />
-        <img class="navbar__icon1" src="../assets/Vector.png"/>
-        <img class="navbar__icon2" src="../assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
+        <button onclick="window.location.href='./pages/about.html'" class="navbar__linkButton">About Us</button>        
+        <button onclick="window.location.href='./pages/rooms.html'" class="navbar__linkButton">Rooms</button>
+        <button onclick="window.location.href='./pages/offers.html'" class="navbar__linkButton">Offers</button>
+        <button onclick="window.location.href='./pages/contact.html'" class="navbar__linkButtonUltimo">Contact</button>   
+        <div class="navbar__iconRecuadro">
+            <img class="navbar__iconRecuadro__img1" src="../assets/Vector.png"/>
+        </div>
+        <div class="navbar__iconRecuadro">
+            <img class="navbar__iconRecuadro__img2" src="../assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
+        </div>
     </navbar>
     <section class="titlePeque">
         <h6 class="titlePeque__superior">THE ULTIMATE LUXURY</h6>
@@ -29,21 +40,24 @@
         </div>
     </section>
 
+
     <section class="roomSlider">
         <div class="swiper swiperM">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">                      
-                    <div class="slideInfoRooms">                        
-                        <img class="slideInfoRooms__mainImg" src="../assets/Room3.jpg"/>
-                        <article class="roomSample">
-                            <img class="roomSample__imgRepeat" src="../assets/Frame 57.png" />
-                            <h3 class="roomSample__h3">Minimal Duplex Room</h3>
-                            <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <div class="roomSample__priceContainer">
-                                <h6 class="roomSample__priceContainer__night">$345/Night</h6>
-                                <h6 class="roomSample__priceContainer__book">Booking Now</h6>
-                            </div>
-                        </article>
+                    <div class="slideInfoRooms"> 
+                        <div class="slideRoomsContainerWide">                       
+                            <img class="slideInfoRooms__mainImg" src="../assets/Room3.jpg"/>
+                            <article class="roomSample">
+                                <img class="roomSample__imgRepeat" src="../assets/Frame 57.png" />
+                                <h3 class="roomSample__h3">Minimal Duplex Room</h3>
+                                <p class="roomSample__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <div class="roomSample__priceContainer">
+                                    <h6 class="roomSample__priceContainer__night">$345/Night</h6>
+                                    <h6 class="roomSample__priceContainer__book">Booking Now</h6>
+                                </div>
+                            </article>
+                        </div>
 
                         <img class="slideInfoRooms__mainImg" src="../assets/Room3.jpg"/>
                         <article class="roomSample">
@@ -255,21 +269,25 @@
 
     <footer>
         <section class="backImg">
-            <article class="hotel">
-                <div class="hotel__container">
-                    <h1 class="hotel__container__title">H</h1>                
-                    <h2 class="hotel__container__h2Primero">HOTEL</h2>
-                    <h2 class="hotel__container__h2Segundo">MIRANDA</h2>
-                </div>
-                <p class="hotel__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
-            </article>
-            <article class="links">
-                <button class="links__button"><img src="../assets/5282541_fb_social media_facebook_facebook logo_social network_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/5305172_tweet_twitter_twitter logo_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/5282539_behance_portfolio_social network_behance logo_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/104493_linkedin_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/5282548_play_player_video_youtube_youtuble logo_icon 1.png"/></button>
-            </article>
+            <div class="hotelLinksWide">
+                <article class="hotel">
+                    <div class="hotel__container">
+                        <h1 class="hotel__container__title">H</h1>     
+                        <div class="hotel__container__wide">           
+                            <h2 class="hotel__container__wide__h2Primero">HOTEL</h2>
+                            <h2 class="hotel__container__wide__h2Segundo">MIRANDA</h2>
+                        </div>
+                    </div>
+                    <p class="hotel__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+                </article>
+                <article class="links">
+                    <button class="links__button"><img src="../assets/5282541_fb_social media_facebook_facebook logo_social network_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/5305172_tweet_twitter_twitter logo_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/5282539_behance_portfolio_social network_behance logo_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/104493_linkedin_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/5282548_play_player_video_youtube_youtuble logo_icon 1.png"/></button>
+                </article>
+            </div>
             <article class="services">
                 <h4 class="services__title">Services</h4>
                 <div class="services__list">
@@ -306,9 +324,9 @@
                     <h5 class="contact__container__text1">Location</h5>
                     <p class="contact__container__text2">An example Venue</p>
                 </div>
-            </article>
+            </article>            
         </section>
-        <section>
+        <section class="copyWide">
             <h2 class="bottomP1">Copyright By@Example - 2020</h2>        
             <h2 class="bottomP2">Terms of use   |   Privacy Enviromental Policy</h2>
         </section>

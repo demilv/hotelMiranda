@@ -9,8 +9,8 @@ body {
   min-width: 320px;
 }
 
-.backImg {
-  background-image: url(../../assets/Rectángulo21.png);
+.backImg, .backImg2 {
+  background-image: url(../assets/Rectángulo21.png);
 }
 
 .hotel {
@@ -1480,6 +1480,19 @@ body {
   margin-left: 1.5em;
 }
 
+@media only screen and (min-width: 1250px) {
+  .swiperM {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .slideRoomsContainerWide {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .generalInfo {
   display: flex;
   flex-direction: column;
@@ -1833,14 +1846,46 @@ body {
     align-items: center;
   }
   .funFacts__h5 {
-    margin-right: 55%;
+    margin-right: 65%;
   }
   .funFacts__h2 {
-    margin-right: 38%;
+    margin-right: 48%;
   }
   .containerFacts {
     display: flex;
     flex-direction: row;
+    gap: 6em;
+  }
+  .facts {
+    gap: 1.5em;
+  }
+  .facts__img1 {
+    width: 4.6em;
+    height: 4.8em;
+  }
+  .facts__dataContainer {
+    margin-left: 0;
+  }
+  .facts__dataContainer__h2 {
+    font-family: "Old Standard TT", serif;
+    color: #111111;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 3.5em;
+    letter-spacing: -0.11em;
+  }
+  .facts__dataContainer__h5 {
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 1em;
+  }
+  .facts__imgArrow {
+    width: 2em;
+    height: 2em;
+    margin-left: 3em;
+    margin-top: 1.5em;
   }
 }
 .titlePeque__containerRDetails {
