@@ -22,7 +22,6 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 3em;
         &__container{
             padding: 0 1em 0 1em;
         }
@@ -48,18 +47,19 @@
             margin: 0.5em 0 3em 0;
             @include buttonNaranja();
             width:18.5em;
-        }
-        &__p{
-            text-align: left;
-            @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
-            line-height:1.5em
-        }
+        }        
     }
 
     &__amenities{
         display:flex;
         flex-direction: column;
         margin-bottom:5em;
+        &__pBig{
+            text-align: left;
+            @include font-family($font3, $color3, $bgcolor0, $weight400, $size085);
+            line-height:1.5em;
+            margin-bottom: 3em
+        }
         &__h2, &__h2Founder{
             @include font-family($font1, $color2, $bgcolor0, $weight400, $size25);
             margin-bottom: 0.8em;
@@ -129,9 +129,65 @@
             height:30em;
             width:20.5em
         }
-
+    }
+}
+@media only screen and (min-width: 1250px) {
+    .titlePeque__containerRDetails{
+        width:15em;
+        margin-left: 70%;
     }
 
+    .details{
+       padding-left: 20%;
+       &__room{
+            margin: 1.5em 0 2.5em 0;
+            width:40em;
+            position:relative;        
+        }
+        &__h2{
+            width:60%;
+        }
+        &__priceContainer{
+            display:flex;
+            flex-direction: row;
+            background-color: white;
+            position:absolute;
+            z-index:99999;
+            top:105%;
+            width:37em
+        }
+    }
+    .roomWidePriceContainer{
+        padding-left: 10%;
+        width:30%;
+        display:flex;
+        flex-direction: row;
+        text-align: right;
+        &__price{
+            @include cardPriceMixin();
+        }
+        &__night{
+            @include cardNightMixin();
+            font-size:1em;
+        }
+    }
+
+    .detailsInitial{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .wideMainDataContainer{
+        margin-right: 3%;
+    }
+
+    .wideMainDataContainer2{
+        width: 21em;
+    }
+
+    .detailsRestWide{
+        padding-right:45%
+    }
 }
 
 

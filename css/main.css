@@ -2013,7 +2013,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 3em;
 }
 .details__availability__container {
   padding: 0 1em 0 1em;
@@ -2059,7 +2058,12 @@ body {
   border: none;
   width: 18.5em;
 }
-.details__availability__p {
+.details__amenities {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+.details__amenities__pBig {
   text-align: left;
   font-family: "Roboto", sans-serif;
   color: #777777;
@@ -2067,11 +2071,7 @@ body {
   font-weight: 400;
   font-size: 0.85em;
   line-height: 1.5em;
-}
-.details__amenities {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .details__amenities__h2, .details__amenities__h2Founder {
   font-family: "Old Standard TT", serif;
@@ -2164,6 +2164,68 @@ body {
   width: 20.5em;
 }
 
+@media only screen and (min-width: 1250px) {
+  .titlePeque__containerRDetails {
+    width: 15em;
+    margin-left: 70%;
+  }
+  .details {
+    padding-left: 20%;
+  }
+  .details__room {
+    margin: 1.5em 0 2.5em 0;
+    width: 40em;
+    position: relative;
+  }
+  .details__h2 {
+    width: 60%;
+  }
+  .details__priceContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: absolute;
+    z-index: 99999;
+    top: 105%;
+    width: 37em;
+  }
+  .roomWidePriceContainer {
+    padding-left: 10%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+  }
+  .roomWidePriceContainer__price {
+    font-family: "Archivo", sans-serif;
+    color: #BEAD8E;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .roomWidePriceContainer__night {
+    font-family: "Archivo", sans-serif;
+    color: #BEAD8E;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 0.85em;
+    margin-top: 1.1em;
+    font-size: 1em;
+  }
+  .detailsInitial {
+    display: flex;
+    flex-direction: row;
+  }
+  .wideMainDataContainer {
+    margin-right: 3%;
+  }
+  .wideMainDataContainer2 {
+    width: 21em;
+  }
+  .detailsRestWide {
+    padding-right: 45%;
+  }
+}
 .offers {
   padding: 3em 1.5em 4em 1.5em;
   background-color: #f4f4f4;

@@ -11,14 +11,25 @@
     <script src="../js/swiperRoom.js" defer></script>
 </head>
 <body>
+    <section class="titleGrandeWide">
+        <p class="titleGrandeWide__text">We Make You Feel Comfortable</p>
+    </section>
     <navbar class="navbar">
         <button class="navbar__menu">≡</button>
         <div class="navbar__recuadro">
-            <img src="../assets/logo.svg"/>
-        </div>
+            <img class="navbar__recuadro__img" src="../assets/logo.svg"/>
+        </div>            
         <img class="navbar__imgtxt" src="../assets/logo-text.svg" />
-        <img class="navbar__icon1" src="../assets/Vector.png"/>
-        <img class="navbar__icon2" src="../assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
+        <button onclick="window.location.href='./pages/about.html'" class="navbar__linkButton">About Us</button>        
+        <button onclick="window.location.href='./pages/rooms.html'" class="navbar__linkButton">Rooms</button>
+        <button onclick="window.location.href='./pages/offers.html'" class="navbar__linkButton">Offers</button>
+        <button onclick="window.location.href='./pages/contact.html'" class="navbar__linkButtonUltimo">Contact</button>   
+        <div class="navbar__iconRecuadro">
+            <img class="navbar__iconRecuadro__img1" src="../assets/Vector.png"/>
+        </div>
+        <div class="navbar__iconRecuadro">
+            <img class="navbar__iconRecuadro__img2" src="../assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
+        </div>
     </navbar>
     <section class="titlePeque">
         <h6 class="titlePeque__superior">THE ULTIMATE LUXURY</h6>
@@ -29,28 +40,36 @@
         </div>
     </section>
 
-    <section class="details">
-        <h5 class="details__h5">DOUBLE BED</h5>
-        <h2 class="details__h2"> Luxury Double Bed</h2>
-        <div class="roomSample__priceContainer">
-            <h3 class="roomSample__priceContainer__price">$345</h3>
-            <h6 class="roomSample__priceContainer__night">/Night</h6>
-        </div>
-        <img class="details__room" src="../assets/Room3.jpg"/>
-
-        <article class="details__availability">
-            <div class="details__availability__container">
-                <h4 class="details__availability__h4">Check Availability</h4>
-                <h6 class="details__availability__h6">Check In</h6>
-                <input class="details__availability__inputDate" type="date">
-                <h6 class="details__availability__h6">Check Out</h6>
-                <input class="details__availability__inputDate"  type="date">
-                <button class="details__availability__button">CHECK AVAILABILITY</button>
+    <section class="details detailsInitial">
+        <div class="wideMainDataContainer">
+            <h5 class="details__h5">DOUBLE BED</h5>
+            <div class="details__priceContainer">
+                <h2 class="details__h2"> Luxury Double Bed</h2>
+                <div class="roomSample__priceContainer roomWidePriceContainer">
+                    <h3 class="roomSample__priceContainer__price">$345</h3>
+                    <h6 class="roomSample__priceContainer__night roomWidePriceContainer__night">/Night</h6>
+                </div>
             </div>
-            <p class="details__availability__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </article>
+            <img class="details__room" src="../assets/Room3.jpg"/>
+        </div>
 
+        <div class="wideMainDataContainer2">
+            <article class="details__availability">
+                <div class="details__availability__container">
+                    <h4 class="details__availability__h4">Check Availability</h4>
+                    <h6 class="details__availability__h6">Check In</h6>
+                    <input class="details__availability__inputDate" type="date">
+                    <h6 class="details__availability__h6">Check Out</h6>
+                    <input class="details__availability__inputDate"  type="date">
+                    <button class="details__availability__button">CHECK AVAILABILITY</button>
+                </div>            
+            </article>
+        </div>
+    </section>
+
+    <section class="details detailsRestWide">
         <article class="details__amenities">
+            <p class="details__amenities__pBig">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             <h2 class="details__amenities__h2">Amenities</h2>
             <div class="details__amenities__listContainer">
                 <ul class="">
@@ -140,21 +159,25 @@
 
     <footer>
         <section class="backImg">
-            <article class="hotel">
-                <div class="hotel__container">
-                    <h1 class="hotel__container__title">H</h1>                
-                    <h2 class="hotel__container__h2Primero">HOTEL</h2>
-                    <h2 class="hotel__container__h2Segundo">MIRANDA</h2>
-                </div>
-                <p class="hotel__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
-            </article>
-            <article class="links">
-                <button class="links__button"><img src="../assets/5282541_fb_social media_facebook_facebook logo_social network_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/5305172_tweet_twitter_twitter logo_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/5282539_behance_portfolio_social network_behance logo_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/104493_linkedin_icon 1.png"/></button>
-                <button class="links__button"><img src="../assets/5282548_play_player_video_youtube_youtuble logo_icon 1.png"/></button>
-            </article>
+            <div class="hotelLinksWide">
+                <article class="hotel">
+                    <div class="hotel__container">
+                        <h1 class="hotel__container__title">H</h1>     
+                        <div class="hotel__container__wide">           
+                            <h2 class="hotel__container__wide__h2Primero">HOTEL</h2>
+                            <h2 class="hotel__container__wide__h2Segundo">MIRANDA</h2>
+                        </div>
+                    </div>
+                    <p class="hotel__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+                </article>
+                <article class="links">
+                    <button class="links__button"><img src="../assets/5282541_fb_social media_facebook_facebook logo_social network_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/5305172_tweet_twitter_twitter logo_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/5282539_behance_portfolio_social network_behance logo_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/104493_linkedin_icon 1.png"/></button>
+                    <button class="links__button"><img src="../assets/5282548_play_player_video_youtube_youtuble logo_icon 1.png"/></button>
+                </article>
+            </div>
             <article class="services">
                 <h4 class="services__title">Services</h4>
                 <div class="services__list">
@@ -191,9 +214,9 @@
                     <h5 class="contact__container__text1">Location</h5>
                     <p class="contact__container__text2">An example Venue</p>
                 </div>
-            </article>
+            </article>            
         </section>
-        <section>
+        <section class="copyWide">
             <h2 class="bottomP1">Copyright By@Example - 2020</h2>        
             <h2 class="bottomP2">Terms of use   |   Privacy Enviromental Policy</h2>
         </section>
