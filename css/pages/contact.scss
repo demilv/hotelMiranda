@@ -97,3 +97,23 @@
         top: 22.3em;
     }
 }
+
+@media only screen and (min-width: 1250px) {
+    .contact{
+        padding: 0 20%;
+        &__medios{
+            display:flex;
+            flex-direction: row;
+            gap:10%;
+            &__containers{
+                width:30%
+            }
+        }
+    }
+
+    .imgContact{
+        max-width: 100%;
+        width:100%;
+        margin-bottom: 2em;
+    }
+}
