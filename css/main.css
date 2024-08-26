@@ -1483,6 +1483,10 @@ body {
   display: none;
 }
 
+.roomSampleWide__priceContainerWide {
+  display: none;
+}
+
 @media only screen and (min-width: 1250px) {
   .slideRoomsContainerWide {
     display: flex;
@@ -1507,23 +1511,23 @@ body {
     max-width: 23em;
     max-width: 25em;
   }
-  .roomSample {
+  .roomSampleWide {
     max-width: none;
     display: block;
     text-align: left;
     width: 30%;
     margin: 2em 0 2em 2em;
   }
-  .roomSample__h3 {
+  .roomSampleWide__h3 {
     background-color: #ffffff;
   }
-  .roomSample__priceContainer {
+  .roomSampleWide__priceContainer {
     display: none;
   }
-  .roomSample__priceContainer__night {
+  .roomSampleWide__priceContainer__night {
     font-size: 2.25em;
   }
-  .roomSample__priceContainer__nightSmall {
+  .roomSampleWide__priceContainer__nightSmall {
     font-family: "Archivo", sans-serif;
     color: #BEAD8E;
     background-color: transparent;
@@ -1533,16 +1537,16 @@ body {
     font-size: 1em;
     margin-top: 3.7em;
   }
-  .roomSample__priceContainer__book {
+  .roomSampleWide__priceContainer__book {
     margin-left: 0.7em;
   }
-  .roomSample__smallBorderWide {
+  .roomSampleWide__smallBorderWide {
     margin-top: 1em;
     width: 50%;
     margin-left: 25%;
     border: 2px solid #F1F1F1;
   }
-  .roomSample__priceContainerWide {
+  .roomSampleWide__priceContainerWide {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -2082,14 +2086,14 @@ body {
   margin-bottom: 0.8em;
   letter-spacing: -0.08em;
 }
-.details__amenities__listContainer {
+.details__amenities__listContainer, .details__amenities__listContainerWideVer {
   display: flex;
   flex-direction: row;
   border-top: 0.2px solid #777777;
   padding-top: 2em;
   margin-bottom: 5em;
 }
-.details__amenities__listContainer li {
+.details__amenities__listContainer li, .details__amenities__listContainerWideVer li {
   list-style-type: none;
   margin-right: 1.8em;
   font-family: "Roboto", sans-serif;
@@ -2099,8 +2103,11 @@ body {
   font-size: 0.85em;
   font-weight: 500;
 }
-.details__amenities__listContainer li img {
+.details__amenities__listContainer li img, .details__amenities__listContainerWideVer li img {
   margin-right: 1em;
+}
+.details__amenities__listContainerWideVer {
+  display: none;
 }
 .details__amenities__founderImg {
   width: 9.5em;
@@ -2130,6 +2137,10 @@ body {
   background-color: transparent;
   font-weight: 400;
   font-size: 1em;
+}
+.details .wideCardOrganizer {
+  display: flex;
+  flex-direction: column;
 }
 .details__cancellation__h2 {
   font-family: "Old Standard TT", serif;
@@ -2163,6 +2174,9 @@ body {
   height: 30em;
   width: 20.5em;
 }
+.details .imgNoSlider {
+  display: none;
+}
 
 @media only screen and (min-width: 1250px) {
   .titlePeque__containerRDetails {
@@ -2188,6 +2202,43 @@ body {
     z-index: 99999;
     top: 105%;
     width: 37em;
+  }
+  .details__amenities__listContainer {
+    display: none;
+  }
+  .details__amenities__listContainerWideVer {
+    display: flex;
+  }
+  .details__relatedRooms__h2 {
+    font-family: "Old Standard TT", serif;
+    color: #111111;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 2.5em;
+    border-bottom: 0.2px solid #777777;
+  }
+  .details__relatedRooms .roomDetailsSlider {
+    margin-bottom: 5em;
+  }
+  .details__relatedRooms .swiperRoomDetails {
+    display: none;
+  }
+  .details .imgNoSlider {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+  }
+  .details .slideInfoTiny {
+    max-width: 20em;
+  }
+  .details .slideInfoTiny__img {
+    max-width: 20em;
+  }
+  .wideCardOrganizer {
+    width: 21em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2705882353);
   }
   .roomWidePriceContainer {
     padding-left: 10%;

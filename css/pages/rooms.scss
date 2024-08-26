@@ -87,6 +87,12 @@
     }
 }
 
+.roomSampleWide{
+    &__priceContainerWide{
+        display:none
+    }
+}
+
 @media only screen and (min-width: 1250px) {
     
 
@@ -111,7 +117,7 @@
         }
     }
 
-    .roomSample{        
+    .roomSampleWide{        
         max-width: none;
         display:block;
         text-align: left;
