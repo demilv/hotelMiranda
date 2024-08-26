@@ -2395,4 +2395,96 @@ body {
   padding-bottom: 3em;
 }
 
+.offerDetailsWide {
+  display: none;
+}
+
+.wideVer {
+  display: none;
+}
+
+@media only screen and (min-width: 1250px) {
+  .offers {
+    padding: 0 15% 0 15%;
+    padding-top: 5em;
+  }
+  .products {
+    height: 77em;
+    position: relative;
+  }
+  .products__img {
+    width: 100%;
+  }
+  .products__h5 {
+    background-color: white;
+  }
+  .products__h2 {
+    background-color: white;
+  }
+  .products__p {
+    margin-bottom: 3em;
+  }
+  .products__priceContainer__pricePositioning {
+    top: 25.75em;
+    z-index: 99999;
+    left: 82%;
+  }
+  .products__priceContainer__nightPositioning {
+    top: 51.3em;
+    z-index: 99999;
+    left: 87.5%;
+  }
+  .products__priceContainer__realPricePositioning {
+    z-index: 99999;
+    top: 21.6em;
+    left: 80%;
+  }
+  .products__priceContainer__realNightPositioning {
+    z-index: 99999;
+    top: 43em;
+    left: 86.7%;
+  }
+  .offerProductWideContainer {
+    position: absolute;
+    margin: -5em 5% 0 5%;
+    padding: 2em 5% 0 5%;
+    background-color: white;
+    border-top: solid 8px;
+    border-top-color: #BEAD8E;
+  }
+  .wideLine {
+    margin: 2em 0 2em 1.5%;
+    width: 100%;
+    border: 2px solid #F1F1F1;
+  }
+  .phoneVer {
+    display: none;
+  }
+  .wideVer {
+    display: flex;
+    flex-direction: row;
+  }
+  .wideVer__left {
+    width: 60%;
+    padding-right: 12%;
+  }
+  .wideVer__right {
+    gap: 15%;
+    width: 40%;
+    display: flex;
+    padding-left: 2%;
+    flex-direction: row;
+  }
+  .offerDetailsWide {
+    display: flex;
+    flex-direction: row;
+  }
+  .smallOfferDetails__img {
+    width: 21em;
+  }
+  .imgRepeatWideSmaller {
+    margin: -2em 5% 0 5%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
