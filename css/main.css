@@ -2425,24 +2425,24 @@ body {
     margin-bottom: 3em;
   }
   .products__priceContainer__pricePositioning {
-    top: 25.75em;
+    margin-top: 52.5%;
     z-index: 99999;
     left: 82%;
   }
   .products__priceContainer__nightPositioning {
-    top: 51.3em;
+    margin-top: 53.7%;
     z-index: 99999;
-    left: 87.5%;
+    left: 90%;
   }
   .products__priceContainer__realPricePositioning {
     z-index: 99999;
-    top: 21.6em;
+    margin-top: 53%;
     left: 80%;
   }
   .products__priceContainer__realNightPositioning {
     z-index: 99999;
-    top: 43em;
-    left: 86.7%;
+    margin-top: 54.5%;
+    left: 88.9%;
   }
   .offerProductWideContainer {
     position: absolute;

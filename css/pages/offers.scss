@@ -124,24 +124,24 @@
         }
         &__priceContainer{
             &__pricePositioning{
-                top:25.75em;
+                margin-top:52.5%;
                 z-index: 99999;
                 left:82%;
             }
             &__nightPositioning{
-                top:51.3em;
+                margin-top:53.7%;
                 z-index: 99999;
-                left:87.5%;
+                left:90%;
             }
             &__realPricePositioning{
                 z-index: 99999;
-                top:21.6em;
+                margin-top:53%;
                 left:80%;
             }
             &__realNightPositioning{
                 z-index: 99999;
-                top:43em;
-                left:86.7%;
+                margin-top:54.5%;
+                left:88.9%;
             }
         }
     }
