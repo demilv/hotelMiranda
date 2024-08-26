@@ -419,6 +419,7 @@ body {
 .contact__medios__containers__img {
   grid-column: 1/span 1;
   grid-row: 1/span 1;
+  z-index: 2;
 }
 .contact__medios__containers__title {
   font-family: "Old Standard TT", serif;
@@ -546,6 +547,42 @@ body {
   }
   .contact__medios__containers {
     width: 30%;
+  }
+  .contact__medios__containers__txt {
+    width: 13.5em;
+  }
+  .contact .contactForm__wideArrange {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 0 10%;
+  }
+  .contact .contactForm__input {
+    width: 50%;
+  }
+  .contact .contactForm__img1, .contact .contactForm__img3, .contact .contactForm__img5 {
+    left: 0;
+    margin-left: 11.5%;
+  }
+  .contact .contactForm__img2 {
+    top: 1.5em;
+  }
+  .contact .contactForm__img2, .contact .contactForm__img4 {
+    margin-left: 52%;
+  }
+  .contact .contactForm__img3, .contact .contactForm__img4 {
+    top: 6.7em;
+  }
+  .contact .contactForm__img5 {
+    top: 11.9em;
+  }
+  .contact .contactForm__textarea {
+    height: 20em;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .contact .contactForm__submit {
+    margin-left: 37.5%;
   }
   .imgContact {
     max-width: 100%;

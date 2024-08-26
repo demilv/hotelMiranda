@@ -10,6 +10,7 @@
     &__img{
         grid-column: 1 / span 1; 
         grid-row: 1 / span 1;
+        z-index:2;
     }
     &__title{
         @include font-family($font1, $color2, $bgcolor0, $weight400, $size125);
@@ -106,7 +107,46 @@
             flex-direction: row;
             gap:10%;
             &__containers{
-                width:30%
+                width:30%;
+                &__txt{
+                    width: 13.5em;
+                }
+            }
+        }
+
+        .contactForm{
+            &__wideArrange{
+                display:flex;
+                flex-direction: row;
+                gap:5%;
+                padding:0 10%
+            }
+            &__input{
+                width:50%
+            }
+            &__img1, &__img3, &__img5{
+                left:0;
+                margin-left: 11.5%;
+            }
+            &__img2{
+                top:1.5em
+            }
+            &__img2, &__img4{
+                margin-left: 52%;
+            }
+            &__img3, &__img4{
+                top:6.7em
+            }
+            &__img5{
+                top:11.9em;                
+            }
+            &__textarea{
+                height:20em;
+                width:80%;
+                margin-left: 10%;
+            }
+            &__submit{
+                margin-left:37.5%
             }
         }
     }
