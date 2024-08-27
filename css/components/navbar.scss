@@ -1,8 +1,14 @@
 @import './text.scss';
 
+.phoneVerNavbarContainer{
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar{
     display: flex;
     flex-direction: row;
+    justify-content:space-around;
     box-shadow: 0px 3px 6px 0px #0000004A;
     height:4.25em;
     &__menu{
@@ -39,10 +45,17 @@
 }
 
 @media only screen and (min-width: 1250px) {
+
+    .phoneVerNavbarContainer{
+        display:contents;
+    }
+
+
     .navbar{
         height:7.5em;
         width:74%;
         position: absolute;
+        justify-content: flex-start;
         top:2.5em;
         left:13%;
         background-color: white;

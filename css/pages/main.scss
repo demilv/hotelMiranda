@@ -12,8 +12,17 @@
     display:none;
 }
 
+.phoneVerContainerDisplayer{
+    display:block;
+}
+
 .titleGrande{
     height:28.25em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     &__button{
         @include buttonNaranja();
         width:16.15em;        
@@ -38,6 +47,10 @@
     margin-bottom: 11em;
     height:23.25em;
     background-color: #222222;     
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__txt{
         @include font-family($font3, $color1, $bgcolor0, $weight700, $size1);
         margin-left: 1em;
@@ -69,6 +82,7 @@
 
 .aboutUs{
     margin-left: 1.5em;
+    
     &__h4{
         @include explanationH4();        
     }
@@ -209,6 +223,11 @@
     }
 }
 
+.phoneVerCentradoIntro{
+    display: flex;
+    flex-direction: column;
+}
+
 .intro{
     height: 52em;
     background-color: #222222;
@@ -304,12 +323,13 @@
 }
 
 .foodMenu{
+    display:flex;
+    flex-direction: column;
     height:62.375em;
-    width:23em;
     padding-left: 1em;
     &__img{
         width:7.15em;
-        margin-left: 73.5%;
+        margin: 0 60%;
     }
     &__imgWide{
         display:none
@@ -317,9 +337,11 @@
     &__h4{
         @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
         letter-spacing: 0.17em;
+        margin: 0 50%;
         margin-bottom: 1.5em;   
     }
     &__h2{
+        margin: 0 auto;
         @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
         letter-spacing: -0.08em;
         margin-bottom: 0.5em;
@@ -412,6 +434,11 @@
 }
 
 @media only screen and (min-width: 1250px) {
+
+    .phoneVerContainerDisplayer, .phoneVerCentradoIntro{
+        display:contents
+    }
+
     .titleGrandeWide{
         display:block;
         height:6.25em;
@@ -424,6 +451,10 @@
     }
 
     .titleGrande{
+        position: static;
+        display: block;
+        justify-content: flex-start;
+        align-items: stretch;
         padding-left: 15%;
         padding-top: 5%;
         &__button{
@@ -435,6 +466,9 @@
     .availability{
         display:flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: static;
         height:10em;
         padding-left: 15%;
         margin-bottom: 6em;
@@ -532,6 +566,10 @@
         &__p, &__h2{
             padding-right: 50%;
         }
+        &__p{
+            min-width: 20em;
+            width: 50%;
+        }
         &__iframe{
             position: absolute;
             left:55%;
@@ -606,6 +644,7 @@
             margin-left: 4%;
         }
         &__h4, &__h2{
+            margin:0;
             padding-left: 20%;
         }
     }

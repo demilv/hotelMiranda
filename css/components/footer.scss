@@ -11,8 +11,9 @@
     padding: 1.5em;
 
     &__container {
-        @include gridContainer();
-        grid-template-rows: unset;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2em;
 
         &__title {
             @include font-family($font2, $color1, $bgcolor1, $weight700, $size2);
@@ -48,6 +49,8 @@
     &__text {
         @include font-family($font2, $color3, $bgcolor0, $weight400, $size1);
         line-height: 1.7em;
+        min-width: 20em;
+        width:50%;
     }
 }
 

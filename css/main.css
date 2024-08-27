@@ -17,11 +17,9 @@ body {
   padding: 1.5em;
 }
 .hotel__container {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr 1fr;
-  margin-bottom: 2.5em;
-  grid-template-rows: unset;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
 }
 .hotel__container__title {
   font-family: "Archivo", sans-serif;
@@ -67,6 +65,8 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.7em;
+  min-width: 20em;
+  width: 50%;
 }
 
 .links {
@@ -230,9 +230,15 @@ body {
     margin-left: 6em;
   }
 }
+.phoneVerNavbarContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
   height: 4.25em;
 }
@@ -268,10 +274,14 @@ body {
 }
 
 @media only screen and (min-width: 1250px) {
+  .phoneVerNavbarContainer {
+    display: contents;
+  }
   .navbar {
     height: 7.5em;
     width: 74%;
     position: absolute;
+    justify-content: flex-start;
     top: 2.5em;
     left: 13%;
     background-color: white;
@@ -594,8 +604,16 @@ body {
   display: none;
 }
 
+.phoneVerContainerDisplayer {
+  display: block;
+}
+
 .titleGrande {
   height: 28.25em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .titleGrande__button {
   font-family: "Roboto", sans-serif;
@@ -625,6 +643,10 @@ body {
   margin-bottom: 11em;
   height: 23.25em;
   background-color: #222222;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .availability__txt {
   font-family: "Roboto", sans-serif;
@@ -893,6 +915,11 @@ body {
   margin-top: 1.1em;
 }
 
+.phoneVerCentradoIntro {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   height: 52em;
   background-color: #222222;
@@ -1025,13 +1052,14 @@ body {
 }
 
 .foodMenu {
+  display: flex;
+  flex-direction: column;
   height: 62.375em;
-  width: 23em;
   padding-left: 1em;
 }
 .foodMenu__img {
   width: 7.15em;
-  margin-left: 73.5%;
+  margin: 0 60%;
 }
 .foodMenu__imgWide {
   display: none;
@@ -1043,9 +1071,11 @@ body {
   font-weight: 700;
   font-size: 0.85em;
   letter-spacing: 0.17em;
+  margin: 0 50%;
   margin-bottom: 1.5em;
 }
 .foodMenu__h2 {
+  margin: 0 auto;
   font-family: "Old Standard TT", serif;
   color: #111111;
   background-color: transparent;
@@ -1167,6 +1197,9 @@ body {
 }
 
 @media only screen and (min-width: 1250px) {
+  .phoneVerContainerDisplayer, .phoneVerCentradoIntro {
+    display: contents;
+  }
   .titleGrandeWide {
     display: block;
     height: 6.25em;
@@ -1182,6 +1215,10 @@ body {
     margin-left: 13%;
   }
   .titleGrande {
+    position: static;
+    display: block;
+    justify-content: flex-start;
+    align-items: stretch;
     padding-left: 15%;
     padding-top: 5%;
   }
@@ -1191,6 +1228,9 @@ body {
   .availability {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: static;
     height: 10em;
     padding-left: 15%;
     margin-bottom: 6em;
@@ -1290,6 +1330,10 @@ body {
   .intro__p, .intro__h2 {
     padding-right: 50%;
   }
+  .intro__p {
+    min-width: 20em;
+    width: 50%;
+  }
   .intro__iframe {
     position: absolute;
     left: 55%;
@@ -1353,6 +1397,7 @@ body {
     margin-left: 4%;
   }
   .foodMenu__h4, .foodMenu__h2 {
+    margin: 0;
     padding-left: 20%;
   }
   .slideBoxContainer {
