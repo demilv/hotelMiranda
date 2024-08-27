@@ -248,6 +248,8 @@
         @include font-family($font2, $color3, $bgcolor0, $weight400, $size085);
         line-height: 1.5em;
         margin-bottom: 1.5em;
+        min-width: 20em;
+        width: 50%;
     }
     &__iframe{
         width: 21.5em;
@@ -567,8 +569,8 @@
             padding-right: 50%;
         }
         &__p{
-            min-width: 20em;
-            width: 50%;
+            min-width: none;
+            width:100%
         }
         &__iframe{
             position: absolute;
