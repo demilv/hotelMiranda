@@ -111,7 +111,7 @@
         }
         &__imgtxt{
             width:8.563em;
-            margin-right: 10%;
+            margin-right: 5%;
         }
         &__menu{
             display:none;
@@ -120,7 +120,7 @@
             display:inline-block;
             @include font-family($font2, $color2, $bgcolor0, $weight700, $size1);
             border:none;
-            margin-right: 4.5%;
+            margin-right: 3%;
         }
         &__linkButtonUltimo{
             margin-right: 0;

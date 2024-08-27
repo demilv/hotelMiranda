@@ -337,7 +337,7 @@ body {
   }
   .navbar__imgtxt {
     width: 8.563em;
-    margin-right: 10%;
+    margin-right: 5%;
   }
   .navbar__menu {
     display: none;
@@ -350,7 +350,7 @@ body {
     font-weight: 700;
     font-size: 1em;
     border: none;
-    margin-right: 4.5%;
+    margin-right: 3%;
   }
   .navbar__linkButtonUltimo {
     margin-right: 0;

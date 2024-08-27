@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/swipersMain.js" defer></script>
+    <script  src="../js/navbarButtonLinks.js" defer></script>
 </head>
 <body>
     <section class="titleGrandeWide">
@@ -16,16 +17,17 @@
     </section>
     <navbar class="navbar">
         <div class="phoneVerNavbarContainer">
-            <button class="navbar__menu">≡</button>
+            <button class="navbar__menu" onclick="headeroptions()">≡</button>
             <div class="navbar__recuadro">
                 <img class="navbar__recuadro__img" src="../assets/logo.svg"/>
-            </div>            
+            </div>       
             <img class="navbar__imgtxt" src="../assets/logo-text.svg" />
         </div>
-        <button onclick="window.location.href='./pages/about.html'" class="navbar__linkButton">About Us</button>        
-        <button onclick="window.location.href='./pages/rooms.html'" class="navbar__linkButton">Rooms</button>
-        <button onclick="window.location.href='./pages/offers.html'" class="navbar__linkButton">Offers</button>
-        <button onclick="window.location.href='./pages/contact.html'" class="navbar__linkButtonUltimo">Contact</button>   
+        <button onclick="window.location.href='../main.html'" class="navbar__linkButton">Home</button>        
+        <button onclick="window.location.href='about.html'" class="navbar__linkButton">About Us</button>        
+        <button onclick="window.location.href='rooms.html'" class="navbar__linkButton">Rooms</button>
+        <button onclick="window.location.href='offers.html'" class="navbar__linkButton">Offers</button>
+        <button onclick="window.location.href='contact.html'" class="navbar__linkButtonUltimo">Contact</button>   
         <div class="phoneVerNavbarContainer">
             <div class="navbar__iconRecuadro">
                 <img class="navbar__iconRecuadro__img1" src="../assets/Vector.png"/>
@@ -33,6 +35,13 @@
             <div class="navbar__iconRecuadro">
                 <img class="navbar__iconRecuadro__img2" src="../assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
             </div>
+        </div>
+        <div class="navbar__otherHidden" id="Banish">
+            <button onclick="window.location.href='../main.html'" class="navbar__linkButton">Home</button>        
+            <button onclick="window.location.href='about.html'" class="navbar__otherHidden__opcionesWide">About Us</button>        
+            <button onclick="window.location.href='rooms.html'" class="navbar__otherHidden__opcionesWide">Rooms</button>
+            <button onclick="window.location.href='offers.html'" class="navbar__otherHidden__opcionesWide">Offers</button>
+            <button onclick="window.location.href='contact.html'" class="navbar__otherHidden__opcionesWide">Contact</button>    
         </div>
     </navbar>
     <section class="titlePeque">
