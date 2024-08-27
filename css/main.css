@@ -286,6 +286,12 @@ body {
     left: 13%;
     background-color: white;
   }
+  .navbar__otherHidden {
+    display: none;
+  }
+  .navbar__otherHidden__opcionesWide {
+    display: none;
+  }
   .navbar__recuadro {
     width: 5em;
     height: 5em;

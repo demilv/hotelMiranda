@@ -59,6 +59,12 @@
         top:2.5em;
         left:13%;
         background-color: white;
+        &__otherHidden{
+            display:none;
+            &__opcionesWide{
+                display:none
+            }
+        }
         &__recuadro{
             width:5em;
             height:5em;

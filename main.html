@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/main.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script  src="./js/navbarButtonLinks.js" defer></script>
     <script src="./js/dateButton.js" defer></script>
     <script src="./js/swipersMain.js" defer></script>
 </head>
@@ -21,7 +22,7 @@
     </section>
     <navbar class="navbar">
         <div class="phoneVerNavbarContainer">
-            <button class="navbar__menu">≡</button>
+            <button class="navbar__menu" onclick="headeroptions()">≡</button>
             <div class="navbar__recuadro">
                 <img class="navbar__recuadro__img" src="./assets/logo.svg"/>
             </div>       
@@ -38,6 +39,12 @@
             <div class="navbar__iconRecuadro">
                 <img class="navbar__iconRecuadro__img2" src="./assets/4092559_search_magnifier_mobile ui_zoom_icon 1.png" />
             </div>
+        </div>
+        <div class="navbar__otherHidden" id="Banish">
+            <button onclick="window.location.href='./pages/about.html'" class="navbar__linkButton">About Us</button>        
+            <button onclick="window.location.href='./pages/rooms.html'" class="navbar__linkButton">Rooms</button>
+            <button onclick="window.location.href='./pages/offers.html'" class="navbar__linkButton">Offers</button>
+            <button onclick="window.location.href='./pages/contact.html'" class="navbar__linkButtonUltimo">Contact</button>    
         </div>
     </navbar>
     <section class="titleGrande">
