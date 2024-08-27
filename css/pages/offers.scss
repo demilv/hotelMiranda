@@ -3,6 +3,13 @@
     background-color: #f4f4f4;    
 }
 
+.phoneVer{    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .products{    
     background-color: white;
     margin-bottom: 2em;
@@ -14,26 +21,26 @@
         &__pricePositioning{
             position: absolute;
             top:3.5em;
-            left:62%;
+            left:6em;
         }
         &__nightPositioning{
             position: absolute;
             top:6.8em;
-            left:82%;
+            left:16.5em;
         }
         &__realPricePositioning{
             color: #DE5777;
             font-size: 2.5em;
             position: absolute;
             top:3.6em;
-            left:55%;
+            left:4.4em;
         }
         &__realNightPositioning{
             color: #DE5777;
             font-size: 1.25em;
             position: absolute;
             top:7em;
-            left:82%;
+            left:13em;
         }
     }
     &__h5{

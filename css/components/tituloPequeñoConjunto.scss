@@ -4,6 +4,10 @@
 .titlePeque{
     height: 17.25em;
     background-color: #333333;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__superior{
         @include tituloSuperior();
     }
@@ -35,6 +39,10 @@
     .titlePeque{
         height: 22.25em;
         padding: 6em 20% 0 20%;
+        position: static;
+        display: block;
+        justify-content: flex-start;
+        align-items: stretch;
         &__container{
             margin-top: 2em;
             margin-left: 80%;

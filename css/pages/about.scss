@@ -77,6 +77,13 @@
     }
 }
 
+.restauranteAboutUsWideContainerUnrestricted{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .restauranteAboutUs{
     padding: 0 1.5em 3em 1.5em;
     margin-bottom: 5em;    
@@ -93,6 +100,8 @@
     }
     &__p{
         @include explanationP();
+        min-width: 22em;
+        max-width: 50%;
     }
     &__button{
         @include buttonNaranja();
@@ -147,7 +156,6 @@
     margin-top: 2.5em;
     margin-bottom: 4em;
     padding: 0 1.5em 0 1.5em;    
-    max-width:23em;
     &__h5{
         @include font-family($font2, $color3, $bgcolor0, $weight700, $size085);
         margin-bottom: 1.5em;
@@ -158,17 +166,21 @@
     }
 }
 
+
 .facts{
-    max-width:23em;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
     display: flex;
     flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     &__img1{
         width:4.6em;
         height:4.8em;
     }
     &__dataContainer{
+        min-width: 10em;
         margin-left: 1.5em;
         &__h2{
             @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
@@ -181,7 +193,7 @@
     &__imgArrow{
         width:2em;
         height:2em;
-        margin-left: auto;
+        margin-left: 5em;
         margin-top: 1.5em;
     }
 }
@@ -192,6 +204,10 @@
 
 .swiper-pagination4About{
     left:-5% !important
+}
+
+.onlyWideImgs{
+    display:none;
 }
 
 @media only screen and (min-width: 1250px) {
@@ -279,6 +295,9 @@
     .restauranteAboutUsWideContainerUnrestricted{
         display:block;
         width:45%;
+        position: static;
+        justify-content: flex-start;
+        align-items: stretch;
     }
 
     .swipper2About{
@@ -316,6 +335,7 @@
             height:4.8em;
         }
         &__dataContainer{
+            min-width: 9em;
             margin-left: 0;
             &__h2{
                 @include font-family($font1, $color2, $bgcolor0, $weight400, $size35);
@@ -331,5 +351,28 @@
             margin-left: 3em;
             margin-top: 1.5em;
         }
+    }
+
+    .onlyWideImgs{
+        display:flex;
+        flex-direction: row;
+        gap:4%;
+        width: 100%;
+        height:30em;
+    }
+
+    .imgAboutWideContainer1, .imgAboutWideContainer2{
+        width:100%;
+        max-width: none;
+        max-height: none;        
+    }
+
+    .imgAboutWideContainer1{
+        text-align: right;
+    }
+
+    .imgAboutWide{
+        max-height: none;
+        width: 35em;
     }
 }
